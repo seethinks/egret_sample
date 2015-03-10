@@ -6,7 +6,11 @@
 		},
 		{
 			"name": "res"
-		}
+		},
+        {
+            "name": "greensock",
+            "path": "."
+        }
 	],
 	"native": {
 		"path_ignore": [],

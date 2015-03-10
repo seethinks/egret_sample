@@ -85,14 +85,28 @@ class Demo2 extends egret.DisplayObjectContainer
         var inputTxt = new egret.TextField();
         inputTxt.type = egret.TextFieldType.INPUT;
         inputTxt.x=10,inputTxt.y=500;
+        inputTxt.width=200;
         this.addChild(inputTxt)
-        inputTxt.text = "请输入...";
+        inputTxt.text = "请输入啊...";
+
+        var myObj = {info:"trace",dd:111}
+        this.trace(myObj)
+
+    }
+
+    private trace(obj:{info:String})
+    {
+        console.log(obj.info)
     }
 
     private startAnimation():void
     {
-        var tw = egret.Tween.get(this.activityBmp);
-        tw.to({alpha:0,x:288,rotation:90,skewX:90},2500).to({alpha:1,x:280,y:300,rotation:180,skewX:-80},2500).to({alpha:1,x:80,rotation:0,skewX:0},2500)
-        tw.call(this.startAnimation,this)
+//        var tw = egret.Tween.get(this.activityBmp);
+//
+//        tw.to({alpha:0,x:288,rotation:90,skewX:90},2500).to({alpha:1,x:280,y:300,rotation:180,skewX:-80},2500).to({alpha:1,x:80,rotation:0,skewX:0},2500)
+//        tw.call(this.startAnimation,this)
+
+        TweenLite.to(this.activityBmp,2,{alpha:1,y:300,x:300,rotation:180,skewX:-80});
+
     }
 }
