@@ -79,13 +79,29 @@ var Demo2 = (function (_super) {
         inputTxt.width = 200;
         this.addChild(inputTxt);
         inputTxt.text = "请输入啊...";
-        var myObj = { info: "trace", dd: 111 };
+        var myObj = { info: "trace", value: 2, dd: 111 };
         this.trace(myObj);
+        var message = {
+            message: "hello world",
+            start: function () {
+                setTimeout(function () {
+                    console.log("this.mee");
+                }, 3000);
+            }
+        };
+        message.start();
+        //        enum Color{Red,Green,Blue}
+        //        console.log(Color.Red)
     };
-    Demo2.prototype.trace = function (obj) {
+    Demo2.prototype.trace = function (obj, value) {
         console.log(obj.info);
     };
     Demo2.prototype.startAnimation = function () {
+        var str = 1;
+        var strNum = str;
+        console.log(strNum + 5);
+        var arr = new Array();
+        var strArr = ["a", "b", "c"];
         //        var tw = egret.Tween.get(this.activityBmp);
         //
         //        tw.to({alpha:0,x:288,rotation:90,skewX:90},2500).to({alpha:1,x:280,y:300,rotation:180,skewX:-80},2500).to({alpha:1,x:80,rotation:0,skewX:0},2500)

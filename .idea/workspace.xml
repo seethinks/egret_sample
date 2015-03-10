@@ -26,8 +26,8 @@
       <file leaf-file-name="Demo2.ts" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/HelloEgret/src/Demo2.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5410765" vertical-offset="1681" max-vertical-offset="2106">
-              <caret line="104" column="2" selection-start-line="104" selection-start-column="2" selection-end-line="104" selection-end-column="2" />
+            <state vertical-scroll-proportion="0.48441926" vertical-offset="1647" max-vertical-offset="2394">
+              <caret line="101" column="0" selection-start-line="101" selection-start-column="2" selection-end-line="102" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -57,6 +57,28 @@
     <option name="y" value="-8" />
     <option name="width" value="1382" />
     <option name="height" value="702" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>JSValidateTypes</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -550,8 +572,8 @@
         <state vertical-scroll-proportion="0.6391437" vertical-offset="673" max-vertical-offset="1242">
           <caret line="49" column="55" selection-start-line="49" selection-start-column="55" selection-end-line="49" selection-end-column="55" />
           <folding>
-            <marker date="1425979867455" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425979867455" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1425988305102" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425988305102" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -590,8 +612,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HelloEgret/src/Demo2.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5410765" vertical-offset="1681" max-vertical-offset="2106">
-          <caret line="104" column="2" selection-start-line="104" selection-start-column="2" selection-end-line="104" selection-end-column="2" />
+        <state vertical-scroll-proportion="0.48441926" vertical-offset="1647" max-vertical-offset="2394">
+          <caret line="101" column="0" selection-start-line="101" selection-start-column="2" selection-end-line="102" selection-end-column="32" />
           <folding />
         </state>
       </provider>
