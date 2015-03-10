@@ -1,12 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?><e:Skin width="105" height="127" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing">	<w:HostComponent name="egret.gui.ItemRenderer"/>	<w:Declarations/>	<e:states>		<e:State name="up"/>		<e:State name="over"/>		<e:State name="down"/>		<e:State name="disabled"/>	</e:states>	<e:UIAsset id="_icon" source="icon_bg" left="0" right="0" top="0" bottom="21"/>	<e:UIAsset id="_quality" left="0" right="0" top="0" bottom="21" source="test_icon"/>
-	<e:Label id="_labels" verticalAlign="middle" textAlign="center" width="88" height="39" size="16" textColor="12498614" horizontalCenter="0.5" verticalCenter="-11"/>	<e:UIAsset id="_items" source="test_icon" left="10" right="11" top="8" bottom="33"/>
-	<e:Label id="_count" textAlign="right" verticalAlign="middle" textColor="16777215" width="84" size="18" height="20" bottom="30" right="10"/>
-	<e:Label id="_eqpetName" verticalAlign="middle" textAlign="center" size="16" textColor="16777215" bold="true" width="103" height="21" bottom="0" horizontalCenter="0"/>
-	<e:Label id="_strength" size="23" textAlign="right" textColor="16777215" width="61" height="29" right="12" top="9"/>
-	<e:UIAsset id="_newEqpt" source="btn_new_event" horizontalCenter="0" verticalCenter="-8.5" width="47" height="48"/>
-	<e:UIAsset id="_effect" x="0" y="0"/>
-	<e:Group id="_group" width="93" height="21" horizontalCenter="0" bottom="29">
-		<e:layout>
-			<e:HorizontalLayout gap="0" horizontalAlign="center"/>
-		</e:layout>
-	</e:Group></e:Skin>

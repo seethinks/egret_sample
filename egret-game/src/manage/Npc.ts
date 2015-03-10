@@ -1,5 +1,0 @@
-class Npc extends PropBase {
-
-
-
-}
