@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="408" height="323" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:UIAsset source="my_panel_3" scale9Grid="56,17,340,102" x="9" y="52" width="188" height="101"/>
+	<e:UIAsset source="my_panel_3" scale9Grid="56,17,340,102" width="188" height="101" x="209" y="158"/>
+	<e:UIAsset source="my_panel_3" height="101" width="188" scale9Grid="56,17,340,102" x="8" y="158"/>
+	<e:UIAsset source="my_panel_1" scale9Grid="44,30,268,187" x="46" y="9" width="314" height="30"/>
+	<e:Label text="卖出装备可获得金币" x="47" y="10" verticalAlign="middle" size="18" width="310" textAlign="center" textColor="1634564"/>
+	<e:UIAsset source="my_panel_3" scale9Grid="56,17,340,102" x="210" y="51" width="188" height="101"/>
+	<e:Button id="_close_btn" label="关闭" skinName="skins.ButtonRedSkin" bottom="3" horizontalCenter="0.5"/>
+	<e:Label id="_white_label" x="20" y="67" height="24" size="18" width="162" textAlign="center" textColor="16447222"/>
+	<e:Button id="_white_btn" label="卖出" skinName="skins.ButtonBlueSkin" width="109" height="42" horizontalCenter="-108.5" verticalCenter="-39.5"/>
+	<e:Label id="_green_label" height="24" textAlign="center" size="18" width="162" x="222" y="67" textColor="2279688"/>
+	<e:Button id="_green_btn" label="卖出" width="109" skinName="skins.ButtonBlueSkin" height="42" horizontalCenter="99.5" verticalCenter="-40.5"/>
+	<e:Label id="_violet_label" textAlign="center" size="18" width="162" height="24" x="224" y="171" textColor="12584615"/>
+	<e:Button id="_violet_btn" label="卖出" width="109" skinName="skins.ButtonBlueSkin" height="42" horizontalCenter="99.5" verticalCenter="64.5"/>
+	<e:Label id="_blue_label" height="24" textAlign="center" size="18" width="162" x="20" y="171" textColor="458751"/>
+	<e:Button id="_blue_btn" label="卖出" width="109" skinName="skins.ButtonBlueSkin" height="42" horizontalCenter="-109.5" verticalCenter="66.5"/>
+</e:Skin>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="524" height="54" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:UIAsset source="paihang_tiao" x="0" y="0"/>
+	<e:Label id="_value_index" textColor="0xF3CB06" size="18" height="23" y="18" x="33" textAlign="center" text="100"/>
+	<e:Label id="_value_id" textColor="0xF3CB06" size="18" height="23" y="18" x="81" textAlign="center" text="998" width="75"/>
+	<e:Label id="_value_level" textColor="0xF3CB06" size="18" height="23" x="164" textAlign="center" text="99" width="50" y="18"/>
+	<e:Label id="_value_sname" textColor="0xF3CB06" size="18" height="23" x="225" textAlign="center" width="156" y="18" text="xxxxxx"/>
+	<e:Label id="_value_pname" textColor="0xF3CB06" size="18" height="23" x="384" textAlign="center" width="120" y="18" text="xxxxx"/>
+	<e:Button id="_join_btn" label="加入" x="1" y="4" skinName="skins.ButtonBlueSkin" width="82" height="47"/>
+</e:Skin>

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="166" height="236" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing" xmlns:ns1="*">
+	<w:HostComponent name="egret.gui.ItemRenderer"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:UIAsset source="shop_itemreder" x="0" y="0" width="167"/>
+	<e:Button id="btn_buy" height="47" skinName="skins.ButtonBlueSkin" bottom="9" label="购  买" width="139" horizontalCenter="0"/>
+	<e:Label id="label_price" width="94" height="23" textColor="16777215" size="16" y="144" verticalAlign="middle" horizontalCenter="0" textAlign="center" bold="true"/>
+	<e:Label id="label_name" width="143" height="24" textColor="14418065" textAlign="center" size="17" horizontalCenter="0.5" y="117" verticalAlign="middle" bold="true"/>
+	<e:UIAsset id="currnecy_icon" width="30" x="14" y="144"/>
+	<ns1:UIIcon id="item_icon" skinName="skins.IconSkin" width="80" height="102" y="20" horizontalCenter="0"/>
+	<e:UIAsset id="img_rebate" x="1" y="1" height="82"/>
+	<e:Label id="lable_count" x="91" y="75" width="33" height="20" textColor="16447479" size="14" verticalAlign="middle"/>
+</e:Skin>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="520" height="403" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:UIAsset scale9Grid="59,21,355,64" y="0" source="my_panel_4" height="77" width="520" x="0"/>
+	<e:UIAsset scale9Grid="59,21,355,64" source="my_panel_4" height="240" width="520" y="100" horizontalCenter="0"/>
+	<e:UIAsset source="hanghui_text_bg" scale9Grid="16,8,96,10" width="486" height="209" y="115" horizontalCenter="0"/>
+	<e:Button skinName="skins.ButtonRedSkin" id="btn_false" y="350" label="取  消" x="60"/>
+	<e:Button skinName="skins.ButtonYellowSkin" id="btn_true" y="350" label="确  定" x="313"/>
+	<e:Label id="_label_info" textColor="0x00FF00" height="28" size="21" width="488" y="22" verticalAlign="middle" textAlign="center" horizontalCenter="0" text="请设置您的公会公告，字数限制为40个字"/>
+	<e:EditableText id="_text" y="123" width="470" height="194" horizontalCenter="0" textColor="16777215" size="21"/>
+</e:Skin>

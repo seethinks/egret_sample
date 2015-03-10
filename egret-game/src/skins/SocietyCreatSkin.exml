@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="473" height="302" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:UIAsset source="my_panel_4" scale9Grid="59,21,355,64" y="0" height="81" horizontalCenter="0"/>
+	<e:UIAsset source="my_panel_4" scale9Grid="59,21,355,64" y="99" height="134" horizontalCenter="0"/>
+	<e:Button id="btn_cancel" label="取  消" y="249" skinName="skins.ButtonRedSkin" horizontalCenter="-129"/>
+	<e:Button id="btn_create" label="创建行会" y="249" skinName="skins.ButtonYellowSkin" horizontalCenter="127"/>
+	<e:Label text="创建行会需消耗300元宝" y="26" width="444" textColor="65280" textAlign="center" verticalAlign="middle" size="21" horizontalCenter="-0.5"/>
+	<e:Label text="行会名称：" x="39" y="152" size="20" textColor="2549257" textAlign="right"/>
+	<e:UIAsset source="my_panel_2" scale9Grid="65,19,392,114" x="133" y="134" width="300" height="48"/>
+	<e:UIAsset id="_name_input" width="271" height="30" x="148" y="143"/>
+</e:Skin>

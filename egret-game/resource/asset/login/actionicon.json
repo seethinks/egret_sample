@@ -1,0 +1,25 @@
+﻿{
+"res":{
+	"actionicon0000": {"x":0,"y":0,"w":222,"h":222},
+	"actionicon0001": {"x":222,"y":0,"w":222,"h":222},
+	"actionicon0002": {"x":0,"y":222,"w":222,"h":222},
+	"actionicon0003": {"x":222,"y":222,"w":222,"h":222},
+	"actionicon0004": {"x":0,"y":444,"w":222,"h":222},
+	"actionicon0005": {"x":222,"y":444,"w":222,"h":222},
+	"actionicon0006": {"x":0,"y":666,"w":222,"h":222}
+},
+"frames": {
+	"actionicon": {
+		"totalFrame": 7,
+		"childrenFrame": [
+			{"res":"actionicon0000","x":0,"y":0},
+			{"res":"actionicon0001","x":0,"y":0},
+			{"res":"actionicon0002","x":0,"y":0},
+			{"res":"actionicon0003","x":0,"y":0},
+			{"res":"actionicon0004","x":0,"y":0},
+			{"res":"actionicon0005","x":0,"y":0},
+			{"res":"actionicon0006","x":0,"y":0}
+		]
+	}
+}
+}

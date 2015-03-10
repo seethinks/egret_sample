@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="166" height="281" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:UIAsset source="charge_item" x="0" y="0"/>
+	<e:Label id="label_price" textColor="0xFFFF00" horizontalCenter="0" textAlign="center" size="16" y="144" verticalAlign="middle" width="132" bold="true" height="23"/>
+	<e:Button id="btn_buy" label="购  买" width="139" skinName="skins.ButtonBlueSkin" height="47" y="224" x="14"/>
+	<e:Label id="label_dec" textAlign="center" size="16" verticalAlign="middle" width="130" bold="true" height="47" textColor="16711680" y="175" horizontalCenter="0"/>
+	<e:Label id="label_name" textColor="0xDC0091" size="17" verticalAlign="middle" width="88" bold="true" height="24" x="69" y="116"/>
+	<e:UIAsset source="itemicon_gold" x="50" y="25"/>
+	<e:UIAsset source="_icon_4" x="43" y="18" width="80" height="80"/>
+</e:Skin>

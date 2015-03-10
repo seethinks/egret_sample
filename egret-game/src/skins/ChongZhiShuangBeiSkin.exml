@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="545" height="406" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:UIAsset source="my_panel_4" scale9Grid="59,21,355,64" width="545" height="354" x="0" y="52" locked="true"/>
+	<e:UIAsset source="chongzhishuangbei" y="59" x="7" locked="true"/>
+	<e:UIAsset source="my_panel_4" height="43" width="545" scale9Grid="59,21,355,64" x="1" y="0" locked="true"/>
+	<e:Button id="_btn" label="前往充值" x="197" y="293" skinName="skins.ButtonRedSkin" locked="true"/>
+	<e:Label id="_label_time" text="2015-01-09  00：00 至 2015-01-11  23：00" y="8" height="24" width="527" horizontalCenter="0" verticalAlign="middle" textAlign="center" textColor="457890" size="20"/>
+</e:Skin>

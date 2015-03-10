@@ -1,0 +1,9 @@
+{
+    "name": "cnzzApi",
+    "dependence": ["core"],
+    "source":"src",
+    "file_list": [
+        "cnzzApi.js",
+        "cnzzApi.d.ts"
+    ]
+}

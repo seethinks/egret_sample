@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="473" height="302" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:UIAsset scale9Grid="59,21,355,64" y="0" x="0" source="my_panel_4" height="81"/>
+	<e:UIAsset scale9Grid="59,21,355,64" y="99" x="0" source="my_panel_4" height="134"/>
+	<e:Button id="btn_cancel" label="取  消" skinName="skins.ButtonRedSkin" y="249" x="34"/>
+	<e:Button id="btn_search" y="249" x="290" label="搜索行会" skinName="skins.ButtonBlueSkin"/>
+	<e:Label verticalAlign="middle" y="26" textColor="0x00FF00" textAlign="center" size="21" width="444" x="14" text="输入行会ID即可搜索行会"/>
+</e:Skin>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="523" height="596" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:UIAsset horizontalCenter="0" scale9Grid="59,21,355,64" source="my_panel_4" height="57" top="0" left="1" right="0"/>
+	<e:UIAsset source="my_panel_4" scale9Grid="59,21,355,64" top="59" bottom="1" left="0" right="0"/>
+	<e:Label verticalAlign="middle" id="xq_label_explain" textColor="0x32FF00" textAlign="center" height="32" text="奖励领取后邮件将自动删除，系统自动清理七天前的邮件" size="16" left="47" right="46" top="13" horizontalCenter="0.5"/>
+</e:Skin>

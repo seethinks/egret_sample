@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="535" height="587" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:UIAsset height="64" source="my_panel_4" scale9Grid="59,21,355,64" width="512" y="0" horizontalCenter="0.5"/>
+	<e:UIAsset scale9Grid="59,21,355,64" source="my_panel_4" height="447" width="535" x="0" y="72"/>
+	<e:UIAsset source="buy_money" x="9" y="15"/>
+	<e:Button id="btn_buy_all" label="购买全部" x="47" y="534" skinName="skins.ButtonYellowSkin"/>
+	<e:Button id="btn_buy" label="购  买" x="338" y="534" skinName="skins.ButtonRedSkin"/>
+	<e:Label id="label_money" text="金币：77555" y="394" height="29" width="229" textColor="15982346" size="19" verticalAlign="middle" x="160" textAlign="center"/>
+	<e:Label id="label_gold" size="19" textColor="0xF3DF0A" height="29" verticalAlign="middle" width="229" x="160" y="439" text="售价：77555" textAlign="center"/>
+	<e:Label id="label_buy_num" size="19" height="29" verticalAlign="middle" width="229" x="291" y="476" textColor="16777215" text="剩余购买次数：1" textAlign="right"/>
+	<e:Label size="19" height="29" verticalAlign="middle" width="460" y="17" horizontalCenter="0" textColor="695795" text="VIP等级越高，可以购买的次数越多" textAlign="center"/>
+	<e:Label id="label_vip_num" size="19" height="29" verticalAlign="middle" width="510" y="82" horizontalCenter="0" text="您当前为VIP0，每天可以购买1次" textColor="65280" textAlign="center"/>
+</e:Skin>

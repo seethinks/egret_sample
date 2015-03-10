@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="552" height="644" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing" xmlns:ns1="*">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:UIAsset height="42" source="my_panel_4" scale9Grid="59,21,355,64" width="552" x="0" y="0" locked="true"/>
+	<e:UIAsset scale9Grid="59,21,355,64" source="my_panel_4" height="601" width="552" x="0" y="43" locked="true"/>
+	<e:Label id="_label_time" height="23" size="16" verticalAlign="middle" width="524" horizontalCenter="0" y="9" textColor="12715511" locked="true"/>
+	<e:UIAsset source="zhuanpan_bg" x="8" y="50" locked="true"/>
+	<e:UIAsset id="_img" source="zhuanpan_zhibiao" x="274" y="313" locked="true"/>
+	<e:UIAsset source="zhuanpan_quan" x="36" y="78" locked="true"/>
+	<e:Label id="_label_desc" height="42" width="357" textColor="457075" verticalAlign="middle" bold="true" x="11" y="588" size="15"/>
+	<e:Button id="_btn_refresh" label="刷    新" skinName="skins.ButtonRedSkin" horizontalCenter="185.5" y="589" width="131" height="46" locked="true"/>
+	<ns1:UIIcon id="_icon4" height="99" width="81" skinName="skins.IconSkin" x="234" y="449" locked="true"/>
+	<ns1:UIIcon id="_icon1" height="99" width="81" skinName="skins.IconSkin" x="234" y="108" locked="true"/>
+	<ns1:UIIcon id="_icon2" height="99" width="81" skinName="skins.IconSkin" x="385" y="200" locked="true"/>
+	<ns1:UIIcon id="_icon3" height="99" width="81" skinName="skins.IconSkin" x="385" y="363" locked="true"/>
+	<ns1:UIIcon id="_icon5" height="99" width="81" skinName="skins.IconSkin" x="87" y="363" locked="true"/>
+	<ns1:UIIcon id="_icon6" height="99" width="81" skinName="skins.IconSkin" x="87" y="200" locked="true"/>
+	<e:UIAsset id="_btn_start" source="btn_txt_start" x="242" y="298"/>
+</e:Skin>

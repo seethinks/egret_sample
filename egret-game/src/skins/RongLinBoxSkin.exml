@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="522" height="569" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing" xmlns:ns1="*">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:UIAsset horizontalCenter="0.5" y="101" source="sq_ronglian_bg"/>
+	<e:Button id="rl_btn_screen" skinName="skins.ButtonYellowSkin" x="53" y="515" label="自动筛选"/>
+	<e:Button id="rl_btn_ronglin" skinName="skins.ButtonRedSkin" x="322" y="515" label="熔  炼"/>
+	<e:UIAsset source="my_panel_4" scale9Grid="59,21,355,64" x="0" width="522" height="81"/>
+	<e:Label id="rl_label_rlnum" verticalAlign="middle" width="232" size="18" textColor="0xFF0000" height="32" horizontalCenter="-133" y="24" text="当前熔炼值：0"/>
+	<e:Button id="rl_btn_cast_spe" skinName="skins.ButtonRedSkin" x="372" y="18" width="120" height="46" label="特殊打造"/>
+	<e:Button id="rl_btn_cast" skinName="skins.ButtonBlueSkin" width="120" height="46" y="18" x="372" label="打  造"/>
+	<ns1:UIIcon id="rl_icon_1" x="55" y="143" skinName="skins.IconSkin" width="86" height="106"/>
+	<ns1:UIIcon id="rl_icon_6" skinName="skins.IconSkin" width="86" height="106" x="382" y="385"/>
+	<ns1:UIIcon id="rl_icon_5" skinName="skins.IconSkin" width="86" height="106" x="382" y="264"/>
+	<ns1:UIIcon id="rl_icon_4" skinName="skins.IconSkin" width="86" height="106" x="382" y="143"/>
+	<ns1:UIIcon id="rl_icon_3" skinName="skins.IconSkin" width="86" height="106" x="55" y="385"/>
+	<ns1:UIIcon id="rl_icon_2" skinName="skins.IconSkin" width="86" height="106" x="55" y="264"/>
+</e:Skin>

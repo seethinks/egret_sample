@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="551" height="670" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:UIAsset source="my_panel_4" scale9Grid="59,21,355,64" height="601" left="0" right="0" horizontalCenter="0" top="2"/>
+	<e:Button id="skill_btn_jnzj" y="616" skinName="skins.ButtonYellowSkin" height="55" label="技能专精" x="45"/>
+	<e:Button id="skill_btn_jjjn" skinName="skins.ButtonRedSkin" height="55" label="防守技能" x="45" y="615"/>
+	<e:Button id="skill_btn_ghjn" skinName="skins.ButtonRedSkin" height="55" label="更换技能" y="615" x="359"/>
+</e:Skin>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="549" height="689" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:UIAsset y="0" source="title_bgImg" x="0"/>
+	<e:UIAsset y="7" source="title5" x="8"/>
+	<e:UIAsset y="85" source="list_bgImg" x="0"/>
+	<e:Button id="_btn_manager" y="635" label="行会管理" skinName="skins.ButtonBlueSkin" horizontalCenter="169"/>
+	<e:Button id="_btn_exit" skinName="skins.ButtonRedSkin" horizontalCenter="-168" y="635" label="退出行会"/>
+	<e:Button id="_btn_buzhen" y="635" horizontalCenter="0" label="争霸赛布阵" skinName="skins.ButtonYellowSkin"/>
+	<e:Label y="72" textColor="0x10B549" text="行会等级：2" height="26" size="20" id="_label_level" width="229" x="10"/>
+	<e:Label x="314" id="_label_renshu" textColor="0x10B549" text="行会人数：2/22" textAlign="right" size="20" y="72" width="229" height="26"/>
+	<e:Label y="133" textColor="0xF3CB06" x="45" size="18" id="_title_index" height="23" text="状态"/>
+	<e:Label y="133" textColor="0xF3CB06" x="118" size="18" id="_title_id" height="23" text="职位"/>
+	<e:Label y="133" textColor="0xF3CB06" text="等级" x="180" size="18" id="_title_level" height="23"/>
+	<e:Label y="133" textColor="0xF3CB06" x="280" size="18" id="_title_sname" height="23" text="角色名"/>
+	<e:Label y="133" textColor="0xF3CB06" x="436" size="18" id="_title_pname" height="23" text="战力"/>
+</e:Skin>

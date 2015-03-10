@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="640" height="960" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:UIAsset id="huang_nv" source="frier_huang" x="328" y="582"/>
+	<e:UIAsset id="huang_nan" source="frier_huang" x="239" y="582"/>
+	<e:UIAsset id="lan_zhanshi" source="frier_lan" x="17" y="679"/>
+	<e:UIAsset id="lan_fashi" source="frier_lan" x="217" y="680"/>
+	<e:UIAsset id="lan_daoshi" source="frier_lan" x="415" y="680"/>
+	<e:UIAsset id="btn_create" source="btn_create" x="180" y="831"/>
+	<e:UIAsset id="btn_daoshi" source="btn_daoshi" x="426" y="690"/>
+	<e:UIAsset id="btn_fashi" source="btn_fashi" x="228" y="690"/>
+	<e:UIAsset id="btn_nan" source="btn_man" x="246" y="590"/>
+	<e:UIAsset id="btn_nv" source="btn_women" x="335" y="590"/>
+	<e:UIAsset id="btn_zhanshi" source="btn_zhanshi" x="28" y="689"/>
+	<e:UIAsset id="btn_changename" source="change_heroname" x="524" y="770"/>
+	<e:UIAsset id="hero_bg" source="hero_bg" x="96" height="534" y="70"/>
+	<e:UIAsset id="hero_name" source="heroname" width="476" height="56" x="41" y="771"/>
+	<e:UIAsset id="wenzi_nan" source="wenzi_nan" x="207" y="608"/>
+	<e:UIAsset id="wenzi_nv" source="wenzi_nv" x="414" y="607"/>
+	<e:UIAsset id="hero_zhanshi" x="82" source="hero_1_1" y="0"/>
+	<e:UIAsset id="creat_text_1" source="creat_text_1" x="46" y="663"/>
+	<e:UIAsset id="creat_text_2" source="creat_text_2" x="448" y="663"/>
+	<e:UIAsset id="creat_text_3" source="creat_text_3" y="663" x="236"/>
+</e:Skin>

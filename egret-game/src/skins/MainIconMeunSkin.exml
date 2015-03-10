@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="640" height="215" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:UIAsset source="main_icon_bg" horizontalCenter="0" bottom="0"/>
+	<e:UIAsset id="_main_btn_bag" x="318" source="main_btn_bag" bottom="3"/>
+	<e:UIAsset id="_main_btn_eqpt" x="213" source="main_btn_eqpt" bottom="3"/>
+	<e:UIAsset id="_main_btn_fight" x="109" source="main_btn_fight" bottom="3"/>
+	<e:UIAsset id="_main_btn_help" source="main_btn_help" bottom="123" x="496"/>
+	<e:UIAsset id="_main_btn_hero" x="528" source="main_btn_hero" bottom.disabled="0" bottom="3"/>
+	<e:UIAsset id="_main_btn_idea" source="main_btn_idea" bottom="123" x="322"/>
+	<e:UIAsset id="_main_btn_mail" source="main_btn_mail" bottom="123" x="147"/>
+	<e:UIAsset id="_main_btn_myinfo" source="main_btn_myinfo" bottom="123" x="59"/>
+	<e:UIAsset id="_main_btn_notice" source="main_btn_notice" bottom="123" x="235"/>
+	<e:UIAsset id="_main_btn_recharge" source="main_btn_recharge" bottom="123" x="409"/>
+	<e:UIAsset id="_main_btn_skill" x="423" source="main_btn_skill" bottom="3"/>
+	<e:UIAsset id="_mian_btn_mian" x="5" source="mian_btn_mian" bottom="3"/>
+	<e:UIAsset id="_mailwarn" source="btn_new_event" y="0" x="190"/>
+	<e:Group id="group_hanghui" width="524" height="87" x="58" bottom="122">
+		<e:UIAsset id="icon_gongxianduihuan" source="gongxianduihuan" x="264" y="1"/>
+		<e:UIAsset id="icon_guaiwugongcheng" source="guaiwugongcheng" x="176" y="1"/>
+		<e:UIAsset id="icon_hanghuichengyuan" source="hanghuichengyuan" x="352" y="1"/>
+		<e:UIAsset id="icon_hanghuipaihang" source="hanghuipaihang" x="438" y="1"/>
+		<e:UIAsset id="icon_hanghuiqiandao" source="hanghuiqiandao" x="1" y="2"/>
+		<e:UIAsset id="icon_hanghuizhengba" source="hanghuizhengba" y="2" x="88"/>
+		<e:layout>
+			<e:BasicLayout/>
+		</e:layout>
+	</e:Group>
+	<e:UIAsset id="_eqptwarn" source="btn_new_event" y="97" x="276"/>
+	<e:UIAsset id="_fightwarn" y="97" source="btn_new_event" x="171"/>
+	<e:UIAsset id="_bagwarn" source="btn_new_event" x="382" y="100"/>
+	<e:UIAsset id="_giftwarn" source="btn_new_event" y="0" x="363"/>
+	<e:UIAsset id="_skillwarn" source="btn_new_event" x="487" y="97"/>
+	<e:UIAsset id="_bellewarn" source="btn_new_event" x="592" y="97"/>
+	<e:UIAsset id="_bag_full" source="bg_full" x="382" y="100"/>
+</e:Skin>

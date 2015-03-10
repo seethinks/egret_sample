@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="640" height="960" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:UIAsset x="0" y="0" source="best_main_bg" locked="true"/>
+	<e:UIAsset id="_jingjichang" source="jingjichang" x="208" y="327" locked="true"/>
+	<e:UIAsset source="main_bg_head" horizontalCenter="0" top="-11"/>
+	<e:UIAsset source="mian_ui_xue" x="247" y="75" locked="true"/>
+	<e:Group id="_mp_group" width="64" height="240" y="79" x="318" locked="true">
+		<e:UIAsset id="_eff_mp" width="64" height="120" x="0" y="0"/>
+	</e:Group>
+	<e:Group id="_hp_group" width="64" height="240" y="79" x="250" locked="true">
+		<e:UIAsset id="_eff_hp" width="64" height="120" y="0" x="0"/>
+	</e:Group>
+	<e:UIAsset source="long_head" horizontalCenter="-23.5" top="0" locked="true"/>
+	<e:UIAsset source="mian_ui_bg_shenglv" x="427" y="125" width="203" locked="true"/>
+	<e:UIAsset source="exp_bg" width="198" x="8" y="126" locked="true"/>
+	<e:UIAsset id="_shenglv_title" source="main_ui_shenglv_title" width="0" x="627" y="137" locked="true"/>
+	<e:UIAsset id="_exp_title" source="exp_title" width="0" height="9" y="129" x="12" locked="true"/>
+	<e:Label id="main_label_money" text="0" x="62" height="22" width="134" textColor="16435483" size="19" verticalAlign="middle" top="149" locked="true"/>
+	<e:Label id="main_label_fightvalue" height="22" width="139" size="19" verticalAlign="middle" textColor="16325378" top="47" x="121" text="5275" locked="true"/>
+	<e:Label id="main_label_name" height="28" verticalAlign="middle" width="208" size="19" textAlign="center" textColor="2862292" top="11" x="72" bold="true" locked="true"/>
+	<e:Label id="main_label_frame" height="28" verticalAlign="middle" width="172" x="383" size="19" textAlign="center" textColor="2862292" top="11" locked="true"/>
+	<e:Label id="main_label_map" height="23" verticalAlign="middle" width="134" x="421" textColor="13600858" text="地图：" size="19" top="50" locked="true"/>
+	<e:Label id="main_label_shenglv" height="25" verticalAlign="middle" width="161" text="胜率:" textColor="4183401" top="105" x="454" textAlign="center" size="16" locked="true"/>
+	<e:Label id="main_label_exp" width="167" verticalAlign="middle" height="25" textColor="16110914" text="经验：" x="15" top="106" textAlign="center" size="16" locked="true"/>
+	<e:Label id="main_label_level" height="27" width="61" x="114" text="Lv.1" verticalAlign="middle" size="19" textColor="15265176" top="76" locked="true"/>
+	<e:Label id="main_label_gold" height="23" verticalAlign="middle" width="134" x="505" textColor="16435483" text="0" size="19" top="148" locked="true"/>
+	<e:UIAsset id="main_img_vip" source="vip0" x="493" top="81" locked="true"/>
+	<e:UIAsset id="_hanghui" source="hanghui" x="88" y="622" locked="true"/>
+	<e:UIAsset id="_ronglian" source="ronglian" x="254" y="519" locked="true"/>
+	<e:UIAsset id="_shangdian" source="shangdian" x="425" y="313" locked="true"/>
+	<e:UIAsset id="_chuangtianguan" source="chuangtianguan" x="17" y="419" locked="true"/>
+	<e:UIAsset id="niu_fa" source="niu_fa" x="7" y="37" locked="true"/>
+	<e:UIAsset id="niu_dao" source="niu_dao" x="7" y="37" locked="true"/>
+	<e:UIAsset id="_act_btn" source="act_icon" x="546" y="188" locked="true"/>
+	<e:UIAsset id="_act_eff" height="0" width="0" x="477" y="105" locked="true"/>
+	<e:UIAsset source="goldicon" x="473" y="149" locked="true"/>
+	<e:UIAsset source="moneyicon" x="31" y="149" locked="true"/>
+	<e:UIAsset source="main_ui_fightvalue" x="86" y="51" locked="true"/>
+	<e:UIAsset source="main_num1" x="230" y="278" locked="true"/>
+	<e:Label id="_txt_num1" x="241" y="311" width="117" size="17" textAlign="center" verticalAlign="middle" textColor="16384956" bold="true" height="21"/>
+</e:Skin>

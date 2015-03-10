@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="607" height="670" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:UIAsset source="hanghui_bgimg" x="0" y="0"/>
+	<e:Label id="_label_gonggao" text="公会公告：" x="38" y="62" width="513" height="86" textColor="4420581" size="16"/>
+	<e:Button id="_btn_open" x="78" y="595" skinName="skins.ButtonRedSkin" label="开  启"/>
+	<e:Button id="_btn_gonxian" x="30" y="599" width="118" height="46" skinName="skins.ButtonBlueSkin" label="贡献排行"/>
+	<e:Button id="_btn_guwu" width="118" height="46" x="161" y="599" skinName="skins.ButtonYellowSkin" label="鼓  舞"/>
+	<e:Button id="_btn_chakan" label="赛事进程" x="368" y="595" skinName="skins.ButtonRedSkin"/>
+	<e:Label id="_label_name" text="Lv.3  神墓" x="3" y="24" width="199" textColor="15712021" size="16" height="19"/>
+	<e:Label id="_label_exp" y="24" textColor="0xEFBF15" size="16" width="199" height="19" x="397" textAlign="right" text="经验：1000/10000"/>
+	<e:Label id="_label_guaiwu" textColor="0xEFBF15" size="16" width="268" height="19" x="22" y="494" text="Lv50  怪物" textAlign="center" locked="true"/>
+	<e:Label id="_label_gongxian" size="16" width="267" height="19" x="22" y="516" textAlign="center" text="怪物经验（贡献）：1444" textColor="16777215" locked="true"/>
+	<e:Label id="_label_renshu" textAlign="right" size="16" width="199" height="19" x="397" y="3" textColor="2158357" text="人数：10/20" locked="true"/>
+	<e:Label id="_label_id" size="16" width="199" height="19" textAlign="center" verticalAlign="middle" textColor="4420581" text="公会ID：12345" horizontalCenter="0" y="24" locked="true"/>
+	<e:UIAsset id="_img_exp" source="exp_title" x="0" y="45" height="7" width="595" locked="true"/>
+	<e:Label id="_label_time" text="05:35:02" width="247" textAlign="center" textColor="65280" bold="true" x="31" size="30" y="386" locked="true"/>
+	<e:Label id="_label_desc" text="怪物撤退倒计时" width="226" textAlign="center" y="346" x="43" textColor="647412"/>
+	<e:Label id="_label_guwu" x="34" y="496" width="238" textColor="362232" size="16" height="21"/>
+	<e:Label id="_label_my_guwu" x="34" size="16" width="238" height="21" y="524" textColor="14616056"/>
+	<e:UIAsset id="_boss_title" source="_boss_title" x="42" y="555" width="244"/>
+	<e:UIAsset id="_boss_title_bg" source="_boss_title_bgimg" x="22" y="548"/>
+	<e:UIAsset id="_text_open" source="_text_open" x="26" y="542"/>
+</e:Skin>

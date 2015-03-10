@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="550" height="720" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:UIAsset source="my_panel_4" scale9Grid="59,21,355,64" width="550" x="0" height="627" y="34"/>
+	<e:UIAsset source="map_list_smallbg" width="533" x="9" y="588"/>
+	<e:Label id="_label_bossName" height="27" verticalAlign="middle" textAlign="center" width="500" y="609" textColor="259051" size="18" horizontalCenter="0" text="----挑战上一张地图BOSS胜利后开启下一张地图----"/>
+	<e:Button id="map_btn_buy" label="购买次数" skinName="skins.ButtonYellowSkin" y="667" x="353"/>
+	<e:Label id="map_label_num" text="今日剩余挑战BOSS次数：2" width="292" height="26" textColor="1044467" size="20" bold="true" y="680" x="1"/>
+	<e:Label text="VIP1以上可以开启BOSS扫荡功能" x="0" y="0" height="31" width="550" verticalAlign="middle" textAlign="center" textColor="911347" size="25"/>
+</e:Skin>

@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="640" height="798" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:UIAsset source="fight_bgImgae" horizontalCenter="0" top="0" width="635" bottom="59"/>
+	<e:UIAsset id="_btn_fight_census" width="255" source="btn_fight_census" height="91" top="200" right="-150"/>
+	<e:UIAsset id="_btn_fight_statistics" width="255" source="btn_fight_statistics" top="199" height="91" left="-148"/>
+	<e:UIAsset source="img_vs" horizontalCenter="0" top="0"/>
+	<e:Button id="_btn_cut_fight" skinName="skins.ButtonBlueSkin" height="53" label="切换地图" bottom="0" left="3"/>
+	<e:Button id="_btn_fast_fight" skinName="skins.ButtonRedSkin" label="快速战斗" bottom="0" left="157"/>
+	<e:Button id="_btn_fight_set" skinName="skins.ButtonRedSkin" label="战斗设置" bottom="0" height="53" right="181"/>
+	<e:Button id="_btn_fight_chat" skinName="skins.ButtonYellowSkin" label="聊天频道" bottom="0" right="26"/>
+	<e:UIAsset id="_btn_new_event" source="btn_new_event" bottom="12" right="13"/>
+	<e:UIAsset id="_mapwarn" source="btn_new_event" right="485" bottom="12"/>
+	<e:UIAsset id="fight_souxun" source="fight_souxun" x="238" top="188"/>
+	<e:Label id="fight_label_time" width="244" verticalAlign="middle" textAlign="center" horizontalCenter="0" textColor="5750304" size="40" height="47" italic="true" fontFamily="Arial" top="128" bold="true"/>
+	<e:Label id="fight_label_log" textColor="4595491" bold="true" fontFamily="Arial" top="303" horizontalCenter="3" bottom="81" left="34" right="28"/>
+	<e:Label id="fight_label_boss" x="99" width="444" textAlign="center" height="30" size="26" bold="true" verticalAlign="middle" fontFamily="SimSun" y="189" textColor="14548054"/>
+	<e:Label id="_map_name" x="261" y="270" height="24" width="121" size="18" textColor="575012" textAlign="center" verticalAlign="middle"/>
+	<e:UIAsset id="_fight_img" source="fight_img_1" x="196" y="117"/>
+</e:Skin>

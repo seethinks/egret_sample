@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="533" height="136" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing">
+	<w:HostComponent name="egret.gui.ItemRenderer"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:UIAsset source="map_list_bg" x="0" y="0"/>
+	<e:UIAsset id="map_btn_challenge" source="btn_kill_boss" x="21" y="25"/>
+	<e:UIAsset id="map_bg_img" source="map_1" x="139" y="13"/>
+	<e:UIAsset source="any_text_bg" x="319" y="14"/>
+	<e:Label id="map_label_name" text="银杏小村" x="344" y="23" height="25" width="143" textColor="16777215" size="20" verticalAlign="middle" textAlign="center"/>
+	<e:Label id="map_label_level" height="25" textAlign="center" verticalAlign="middle" width="143" x="343" y="60" text="10 - 20" size="19" textColor="2670574"/>
+	<e:Label id="map_label_ing" text="当前地图挂机中" x="142" y="96" height="21" width="371" textAlign="center" size="18" textColor="8056836"/>
+</e:Skin>

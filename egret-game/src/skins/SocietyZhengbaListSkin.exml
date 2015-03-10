@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="525" height="55" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:UIAsset y="0" source="paihang_tiao" horizontalCenter="0"/>
+	<e:Label textColor="0xFFFFFF" size="17" verticalAlign="middle" width="311" id="_label_text" height="30" y="12" horizontalCenter="-53" textAlign="center"/>
+	<e:UIAsset source="sheng" x="10" y="6"/>
+	<e:UIAsset source="bai" x="367" y="4"/>
+	<e:Button id="_btn_look" label="查看" x="421" y="6" width="96" height="45" skinName="skins.ButtonBlueSkin"/>
+</e:Skin>

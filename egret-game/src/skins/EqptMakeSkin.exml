@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="533" height="628" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing" xmlns:ns1="*">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:UIAsset scale9Grid="59,21,355,64" source="my_panel_4" height="478" width="534" x="0" top="27"/>
+	<e:Label id="make_itemlabel_propey" textColor="0xFFFFFF" height="328" size="19" width="359" top="51" x="152"/>
+	<e:Label id="make_itemlabel_type" textColor="0xFFFFFF" size="18" verticalAlign="middle" y="183" x="9" width="120" height="20" textAlign="center"/>
+	<ns1:UIIcon id="make_icon" skinName="skins.IconSkin" left="20" top="48"/>
+	<e:Label text="当前可以的打造装备：" y="0" width="335" textColor="16777215" size="21" x="1"/>
+	<e:Label id="make_label_num" x="1" y="509" width="304" size="20" textColor="16777215"/>
+	<e:Label id="make_label_need" size="20" width="532" x="1" y="541" textColor="65280" height="28"/>
+	<e:Button id="make_btn_refresh" label="刷  新" x="88" y="575" skinName="skins.ButtonBlueSkin"/>
+	<e:Button id="make_btn_make" label="打  造" x="311" y="575" skinName="skins.ButtonRedSkin"/>
+</e:Skin>

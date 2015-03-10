@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="139" height="52" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing" width.upAndSelected="139" height.upAndSelected="52" width.overAndSelected="139" height.overAndSelected="52" width.downAndSelected="139" height.downAndSelected="52" width.disabledAndSelected="139" height.disabledAndSelected="52" width.disabled="139" height.disabled="52" width.down="139" height.down="52" width.over="139" height.over="52" width.up="139" height.up="52">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="up"/>
+		<e:State name="over"/>
+		<e:State name="down"/>
+		<e:State name="disabled"/>
+		<e:State name="upAndSelected"/>
+		<e:State name="overAndSelected"/>
+		<e:State name="downAndSelected"/>
+		<e:State name="disabledAndSelected"/>
+	</e:states>
+	<e:UIAsset id="_img" source.upAndSelected="btn_chek1" source.overAndSelected="btn_chek1" source.downAndSelected="btn_chek1" source.disabledAndSelected="btn_chek1" x.upAndSelected="0" y.upAndSelected="0" x.overAndSelected="0" y.overAndSelected="0" x.downAndSelected="0" y.downAndSelected="0" x.disabledAndSelected="0" y.disabledAndSelected="0" x.disabled="0" y.disabled="8" y.down="8" x.down="0" x.over="0" y.over="8" x.up="0" y.up="8" bottom="-1" horizontalCenter="0" source="btn_chek2"/>
+	<e:UIAsset id="_wenzi" source="wenzi_wuping" horizontalCenter="0" bottom="2"/>
+</e:Skin>

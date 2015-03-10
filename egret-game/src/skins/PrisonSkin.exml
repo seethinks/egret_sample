@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="550" height="661" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:UIAsset source="jianyu_bgimg" x="0" y="0"/>
+	<e:Label id="_label_pk" x="11" y="64" height="32" size="19" width="211" verticalAlign="middle" textColor="16451335" bold="true"/>
+	<e:Label id="_label_time" size="19" y="64" height="32" verticalAlign="middle" width="309" x="234" textAlign="right" textColor="637018" bold="true"/>
+	<e:Label width="519" height="62" x="13" y="526" verticalAlign="middle" textColor="62249" text="    进入监狱的玩家，离线时将无任何收益（包括装备）；在线时所获金币和经验将变为原有的一半；而pk值消退速度加快一倍。" size="18"/>
+	<e:Button id="_btn_huilu" label="贿  赂" y="608" skinName="skins.ButtonYellowSkin" left="70"/>
+	<e:Button id="_btn_zhuilu" skinName="skins.ButtonRedSkin" y="608" right="70" label="重金贿赂"/>
+</e:Skin>

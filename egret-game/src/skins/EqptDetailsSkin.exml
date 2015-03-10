@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="522" height="604" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing" xmlns:ns1="*">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:UIAsset scale9Grid="65,19,392,114" source="my_panel_2" height="603" left="0" right="0" horizontalCenter="0" top="0"/>
+	<e:Button id="xz_itembtn_qianghua" skinName="skins.ButtonBlueSkin" height="49" width="110" label="强化" y="49" x="398"/>
+	<e:Button id="xz_itembtn_genghuan" height="49" width="110" label="更换" skinName="skins.ButtonRedSkin" right="14" top="221"/>
+	<e:Button id="xz_itembtn_xiangqian" height="50" width="135" skinName="skins.ButtonGreenSkin" label="宝石镶嵌" top="227" x="9"/>
+	<e:Button id="xz_itembtn_chuancheng" height="50" width="135" skinName="skins.ButtonYellowSkin" label="神器传承" top="367" x="7"/>
+	<e:Button id="xz_itembtn_tunshi" height="50" width="135" skinName="skins.ButtonYellowSkin" label="神器吞噬" left="7" top="297"/>
+	<e:Button id="xz_itembtn_xiexia" height="49" width="110" label="卸下" skinName="skins.ButtonRedSkin" right="14" top="163"/>
+	<e:Button id="xz_itembtn_xilian" skinName="skins.ButtonBlueSkin" height="49" width="110" label="洗练" y="106" x="398"/>
+	<e:Label id="xz_itemlabel_propey" textColor="0xFFFFFF" height="478" size="19" width="239" x="149" top="23"/>
+	<e:Label id="xz_itemlabel_type" size="18" textAlign="center" width="115" height="24" textColor="653516" left="10" top="155"/>
+	<e:Label id="xz_itemlabel_name" textColor="0xFFFFFF" height="31" size="25" left="149" right="133" top="24"/>
+	<ns1:UIIcon id="xz_icon" skinName="skins.IconSkin" top="20" left="13"/>
+</e:Skin>

@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="597" height="761" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing" xmlns:ns1="*">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:UIAsset source="hero_bgImg1" x="20" y="152"/>
+	<e:UIAsset source="hero_bgimg2" x="26" y="151"/>
+	<e:UIAsset source="belle_bgImg" x="0" y="111"/>
+	<e:UIAsset id="belle_hero" horizontalCenter="-22" y="230" source="hero_body_101"/>
+	<e:UIAsset source="belle_bgImg" y="111" x="2"/>
+	<e:Button id="belle_btn_zhengfa" label="阵  法" skinName="skins.ButtonBlueSkin" width="140" height="52" y="690" x="23"/>
+	<e:Button id="belle_btn_stutas" width="140" height="52" skinName="skins.ButtonRedSkin" label="休息中" y="690" x="434"/>
+	<e:Button id="belle_btn_upstart" width="140" height="52" skinName="skins.ButtonYellowSkin" label="升  星" y="690" horizontalCenter="0"/>
+	<e:UIAsset id="belle_hp" source="belle_hp" width="157" y="163" x="32"/>
+	<e:UIAsset id="belle_mp" source="belle_mp" width="158" y="192" x="32"/>
+	<e:Label height="64" textColor="0xFFFFFF" textAlign="center" verticalAlign="middle" width="65" x="465" y="581" text="10星开启" size="14"/>
+	<e:Label text="1星开启" x="65" y="582" height="64" width="65" textColor="16777215" size="14" verticalAlign="middle" textAlign="center"/>
+	<e:Label height="64" textColor="0xFFFFFF" textAlign="center" verticalAlign="middle" width="65" x="197" y="582" text="4星开启" size="14"/>
+	<e:Label height="64" textColor="0xFFFFFF" textAlign="center" verticalAlign="middle" width="65" x="332" y="581" text="7星开启" size="14"/>
+	<e:UIAsset id="belle_skill1" width="65" height="65" y="581" x="65"/>
+	<e:UIAsset id="belle_skill4" width="65" height="65" y="581" x="465"/>
+	<e:UIAsset id="belle_skill3" width="65" height="65" y="581" x="332"/>
+	<e:UIAsset id="belle_skill2" width="65" height="65" y="581" x="197"/>
+	<e:Group width="278" height="25" x="275" y="162">
+		<e:UIAsset id="belle_start1" x="147" y="96" source="belle_start_a"/>
+		<e:UIAsset id="belle_start2" source="belle_start_a" x="96" y="92"/>
+		<e:UIAsset id="belle_start3" source="belle_start_a" x="120" y="148"/>
+		<e:UIAsset id="belle_start4" source="belle_start_a" x="61" y="126"/>
+		<e:UIAsset id="belle_start5" source="belle_start_a" x="60" y="162"/>
+		<e:UIAsset id="belle_start6" source="belle_start_a" x="153" y="134"/>
+		<e:UIAsset id="belle_start7" source="belle_start_a" x="96" y="137"/>
+		<e:UIAsset id="belle_start8" source="belle_start_a" x="40" y="135"/>
+		<e:UIAsset id="belle_start9" source="belle_start_a" x="51" y="97"/>
+		<e:UIAsset id="belle_start10" x="85" y="61" source="belle_start_a"/>
+		<e:layout>
+			<e:HorizontalLayout/>
+		</e:layout>
+	</e:Group>
+	<e:Label id="belle_label_name" width="269" textColor="16777215" size="22" y="122" x="26" text="Lv."/>
+	<e:Label id="belle_label_fightnum" size="22" width="277" textAlign="right" textColor="891088" text="战斗力：0" x="298" y="121"/>
+	<e:Label id="belle_label_hurt" size="22" width="332" textColor="2347021" text="伤害: " x="216" y="190"/>
+	<e:Label size="22" width="58" text="星级:" textColor="65280" x="216" y="158"/>
+	<e:UIAsset id="belle_btn_check" source="belle_btn_weizhi" x="517" y="219"/>
+	<ns1:UIIcon id="belle_icon4" skinName="skins.IconSkin" width="84" height="102" y="300" x="50"/>
+	<ns1:UIIcon id="belle_icon2" skinName="skins.IconSkin" width="84" height="102" y="461" x="450"/>
+	<ns1:UIIcon id="belle_icon1" skinName="skins.IconSkin" width="84" height="102" y="461" x="50"/>
+	<ns1:UIIcon id="belle_icon6" skinName="skins.IconSkin" width="84" height="102" y="300" x="450"/>
+	<e:Label id="belle_label_hp" height="19" textColor="16777215" size="16" textAlign="center" verticalAlign="middle" width="156" y="160" text="0" x="33"/>
+	<e:Label id="belle_label_mp" height="19" size="16" textColor="0xFFFFFF" textAlign="center" verticalAlign="middle" width="156" y="191" text="0" x="33"/>
+	<e:Group width="593" height="96" y="11" horizontalCenter="0">
+		<ns1:BelleHead id="_hero_icon_1" x="156" y="59" skinName="skins.BelleHeadSkin"/>
+		<ns1:BelleHead id="_hero_icon_2" skinName="skins.BelleHeadSkin" x="284" y="69"/>
+		<ns1:BelleHead id="_hero_icon_3" skinName="skins.BelleHeadSkin" x="418" y="72"/>
+		<ns1:BelleHead id="_hero_icon_4" skinName="skins.BelleHeadSkin" x="530" y="64"/>
+		<ns1:BelleHead id="_hero_icon_5" skinName="skins.BelleHeadSkin" x="374" y="530"/>
+		<ns1:BelleHead id="_hero_icon_6" skinName="skins.BelleHeadSkin" x="603" y="567"/>
+		<e:layout>
+			<e:HorizontalLayout gap="1"/>
+		</e:layout>
+	</e:Group>
+	<e:UIAsset source="new_loding_bg" y="547" height="24" horizontalCenter="0"/>
+	<e:Label id="_label_p" y="546" height="24" size="20" width="480" horizontalCenter="0.5" textAlign="center" verticalAlign="middle" bold="true" textColor="16711680"/>
+</e:Skin>

@@ -1,0 +1,23 @@
+{
+"res":{
+	"eff_fight_10000": {"x":0,"y":0,"w":230,"h":187},
+	"eff_fight_10001": {"x":0,"y":187,"w":230,"h":187},
+	"eff_fight_10002": {"x":0,"y":374,"w":230,"h":187},
+	"eff_fight_10003": {"x":0,"y":561,"w":230,"h":187},
+	"eff_fight_10004": {"x":0,"y":748,"w":230,"h":187},
+	"eff_fight_10005": {"x":230,"y":748,"w":0,"h":0}
+},
+"frames": {
+	"eff_fight_1": {
+		"totalFrame": 6,
+		"childrenFrame": [
+			{"res":"eff_fight_10000","x":0,"y":0},
+			{"res":"eff_fight_10001","x":0,"y":-2},
+			{"res":"eff_fight_10002","x":1,"y":-1},
+			{"res":"eff_fight_10003","x":0,"y":0},
+			{"res":"eff_fight_10004","x":0,"y":0},
+			{"res":"eff_fight_10005","x":0,"y":0,"action":"thisStop"}
+		]
+	}
+}
+}

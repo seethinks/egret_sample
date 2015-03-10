@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="522" height="218" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing" xmlns:ns1="*">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:UIAsset source="my_panel_2" scale9Grid="65,19,392,114" horizontalCenter="0" height="218" top="0"/>
+	<e:Button id="xz_itembtn_check" skinName="skins.ButtonBlueSkin" width="110" height="49" label="装  备" top="85" x="404"/>
+	<e:Label id="xz_itemlabel_type" x="417" width="95" height="26" size="18" verticalAlign="middle" textAlign="center" text="主手武器" textColor="14723618" top="12"/>
+	<e:Label id="xz_itemlabel_propey" x="128" width="263" height="197" textColor="16777215" size="19" top="9"/>
+	<ns1:UIIcon id="xz_reader_icon" x="10" skinName="skins.IconSkin" top="10"/>
+	<e:Label id="xz_label_bufu" text="职业不符" x="145" width="226" height="60" textColor="8465966" verticalAlign="middle" textAlign="center" bold="true" size="44" top="78"/>
+</e:Skin>

@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="534" height="639" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:UIAsset height="496" source="my_panel_4" x="0" width="534" scale9Grid="59,21,355,64" top="87"/>
+	<e:UIAsset y="0" width="534" source="titile_bg" x="0"/>
+	<e:UIAsset source="vip_title_bg" x="10" y="94"/>
+	<e:UIAsset y="55" id="_now_vipLv" x="40"/>
+	<e:UIAsset id="_next_vipLv" y="55" x="429"/>
+	<e:Label height="21" y="12" textColor="0x20D005" textAlign="center" size="16" id="_charge_ppt" width="489" verticalAlign="middle" x="19"/>
+	<e:UIAsset id="_vip_exp" y="62" width="2" source="exp" x="103"/>
+	<e:Label id="vip_label_level" text="vip0等级特权" y="103" width="189" textColor="3844839" textAlign="center" horizontalCenter="0" size="22"/>
+	<e:Label id="vip_label_privilege" width="325" y="158" height="408" text="vip0等级特权" horizontalCenter="0.5" size="22" textColor="16777215"/>
+	<e:UIAsset id="vip_btn_left" source="vip_btn_left" x="8" y="294"/>
+	<e:UIAsset id="vip_btn_right" source="vip_btn_right" x="445" y="297"/>
+	<e:Button id="_charge_xq_btn" skinName="skins.ButtonYellowSkin" label="充  值" horizontalCenter="0.5" y="586"/>
+</e:Skin>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="281" height="96" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:UIAsset id="_head" source="m_1" x="201" y="19" width="58" height="58"/>
+	<e:UIAsset source="fight_boss_head" x="0" y="0"/>
+	<e:UIAsset id="_hp" source="fight_boss_hp" y="55" width="182" x="28"/>
+	<e:Label height="26" verticalAlign="middle" id="_text_name" width="174" textAlign="right" x="12" textColor="16045066" y="25" size="19"/>
+	<e:Label verticalAlign="middle" textColor="0xFFFFFF" textAlign="center" size="16" id="_text_hp" width="174" height="19" x="25" y="54"/>
+	<e:Label textColor="0x48A75C" verticalAlign="middle" size="14" id="_label_buff" width="173" bold="true" height="19" x="19" y="76" textAlign="right"/>
+	<e:UIAsset id="_img_siwang" source="siwang" x="63" y="47"/>
+</e:Skin>

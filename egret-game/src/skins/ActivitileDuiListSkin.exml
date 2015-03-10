@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="530" height="160" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing" xmlns:ns1="*">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:UIAsset source="list_bgimg" x="0" y="0"/>
+	<e:UIAsset id="_btn_get" width="77" source="act_get_btn" x="441" y="47"/>
+	<ns1:UIIcon skinName="skins.IconSkin" id="_icon1" width="86" height="105" x="46" y="18"/>
+	<ns1:UIIcon id="_icon3" skinName="skins.IconSkin" height="105" width="86" x="306" y="18"/>
+	<ns1:UIIcon id="_icon2" skinName="skins.IconSkin" height="105" width="86" x="175" y="18"/>
+	<e:Label id="_label1" x="51" y="124" height="21" size="15" width="74" verticalAlign="middle" textAlign="center" textColor="327131"/>
+	<e:Label id="_label3" height="21" verticalAlign="middle" textAlign="center" size="15" width="74" x="311" y="126" textColor="327131"/>
+	<e:Label id="_label2" verticalAlign="middle" textAlign="center" size="15" width="74" height="21" x="179" y="124" textColor="327131"/>
+	<e:UIAsset source="act_jia" x="268" y="53"/>
+	<e:UIAsset source="act_jian" x="135" y="46"/>
+	<e:UIAsset id="_vip" source="vip0" x="455" y="107"/>
+</e:Skin>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="556" height="523" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:UIAsset source="belle_fazheng_bgimg" x="0" y="0" height="523"/>
+	<e:UIAsset source="zf_bgimg" x="0" y="0"/>
+	<e:UIAsset id="_head1" x="147" y="28"/>
+	<e:UIAsset id="_head4" x="278" y="332"/>
+	<e:UIAsset id="_head3" x="439" y="230"/>
+	<e:UIAsset id="_head5" x="120" y="230"/>
+	<e:UIAsset id="_head2" x="411" y="29"/>
+	<e:Label id="_label_p" width="237" height="147" textColor="251382" size="19" y="366" x="20"/>
+	<e:Label id="_open5" text="55级开启" height="42" size="14" width="74" textColor="16777215" textAlign="center" verticalAlign="middle" x="123" y="253"/>
+	<e:Label id="_open4" height="42" verticalAlign="middle" textColor="0xFFFFFF" textAlign="center" size="14" width="74" text="45级开启" x="282" y="354"/>
+	<e:Label id="_open3" height="42" verticalAlign="middle" textColor="0xFFFFFF" textAlign="center" size="14" width="74" text="35级开启" x="445" y="253"/>
+	<e:Label id="_open2" height="42" verticalAlign="middle" textColor="0xFFFFFF" textAlign="center" size="14" width="74" text="25级开启" x="417" y="50"/>
+	<e:Label id="_open1" height="42" verticalAlign="middle" textColor="0xFFFFFF" text="15级开启" textAlign="center" size="14" width="74" x="151" y="50"/>
+</e:Skin>

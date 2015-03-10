@@ -1,0 +1,16 @@
+{
+	"document_class": "Demo2",
+	"modules": [
+		{
+			"name": "core"
+		},
+		{
+			"name": "res"
+		}
+	],
+	"native": {
+		"path_ignore": [],
+		"android_path": "..\\HelloEgretAndroid"
+	},
+	"egret_version": "1.5.5"
+}

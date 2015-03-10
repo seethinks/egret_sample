@@ -1,0 +1,23 @@
+{
+"res":{
+	"opendoor0000": {"x":0,"y":0,"w":451,"h":345},
+	"opendoor0001": {"x":451,"y":0,"w":451,"h":345},
+	"opendoor0002": {"x":0,"y":345,"w":451,"h":345},
+	"opendoor0003": {"x":451,"y":345,"w":451,"h":345},
+	"opendoor0004": {"x":0,"y":690,"w":451,"h":345},
+	"opendoor0005": {"x":451,"y":690,"w":451,"h":345}
+},
+"frames": {
+	"opendoor": {
+		"totalFrame": 6,
+		"childrenFrame": [
+			{"res":"opendoor0000","x":0,"y":0},
+			{"res":"opendoor0001","x":0,"y":0},
+			{"res":"opendoor0002","x":0,"y":0},
+			{"res":"opendoor0003","x":0,"y":0},
+			{"res":"opendoor0004","x":0,"y":0},
+			{"res":"opendoor0005","x":0,"y":0,"action":"startGame"}
+		]
+	}
+}
+}

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="549" height="688" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:UIAsset y="0" source="title_bgImg" x="0"/>
+	<e:UIAsset source="title2" y="1" height="100" width="536" x="7"/>
+	<e:UIAsset y="85" source="list_bgImg" x="0"/>
+	<e:Button id="_btn_close" skinName="skins.ButtonRedSkin" y="635" horizontalCenter="0" label="关  闭"/>
+	<e:Label textColor="0xF3CB06" text="排名" size="18" id="_title_index" height="23" x="45" y="133"/>
+	<e:Label textColor="0xF3CB06" text="ID" size="18" id="_title_id" height="23" x="118" y="133"/>
+	<e:Label textColor="0xF3CB06" text="等级" size="18" id="_title_level" height="23" x="180" y="133"/>
+	<e:Label textColor="0xF3CB06" text="行会名称" size="18" id="_title_sname" height="23" x="280" y="133"/>
+	<e:Label id="_title_pname" textColor="0xF3CB06" text="会长" height="23" size="18" x="436" y="133"/>
+</e:Skin>

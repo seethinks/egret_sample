@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="533" height="145" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing">
+	<w:HostComponent name="egret.gui.ItemRenderer"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:UIAsset source="deul_list_bg" x="0" y="5"/>
+	<e:UIAsset id="deul_img_head" x="21" y="30"/>
+	<e:UIAsset id="deul_img_job" x="-5" y="85"/>
+	<e:Label id="deul_label_name" x="141" width="373" height="108" textColor="16777215" y="18" text="PK不乱发型【杀杀人，跳跳舞】" size="16"/>
+	<e:UIAsset id="deul_btn_change" source="deul_btn_challenge" x="429" y="17"/>
+	<e:UIAsset id="rank_img_bg" source="player_head_bg" x="426" y="36" width="75" height="74"/>
+	<e:UIAsset id="rank_img" x="432" y="42"/>
+	<e:Label id="deul_label_level" text="Lv.99" width="83" height="20" size="16" verticalAlign="bottom" textColor="13825798" y="117" x="22" textAlign="center"/>
+</e:Skin>

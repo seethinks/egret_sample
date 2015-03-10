@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="495" height="160" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing" xmlns:ns1="*">
+	<w:HostComponent name="egret.gui.ItemRenderer"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:UIAsset scale9Grid="59,21,355,64" width="496" height="160" x="0" y="0" source="my_panel_2"/>
+	<ns1:UIIcon id="_item_icon" x="18" y="14" skinName="skins.IconSkin"/>
+	<e:Label id="_label_shuxing" x="136" y="15" width="216" height="130" textColor="16777215" size="16"/>
+	<e:Label id="_label_buwei" width="125" height="23" x="356" y="15" size="20" textAlign="right" textColor="10983232"/>
+	<ns1:UICheckBox id="_check" label="复选框" skinName="skins.SkillCheckSkin" x="393" y="59"/>
+</e:Skin>

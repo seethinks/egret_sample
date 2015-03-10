@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="522" height="583" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:UIAsset horizontalCenter="-0.5" y="0" source="my_panel_4" height="462" width="523" scale9Grid="59,21,355,64"/>
+	<e:UIAsset width="501" source="my_panel_3" scale9Grid="56,17,340,102" height="305" horizontalCenter="0.5" y="9"/>
+	<e:UIAsset source="my_panel_3" scale9Grid="56,17,340,102" width="501" height="133" y="319" horizontalCenter="0.5"/>
+	<e:UIAsset source="my_panel_4" height="95" width="95" scale9Grid="59,21,355,64" horizontalCenter="-190.5" y="23"/>
+	<e:UIAsset id="my_head_img" source="player_head" x="29" y="28"/>
+	<e:UIAsset source="my_panel_2" scale9Grid="65,19,392,114" x="132" y="25" width="365" height="275"/>
+	<e:UIAsset source="my_panel_2" scale9Grid="65,19,392,114" width="474" height="95" x="24" y="340"/>
+	<e:UIAsset id="my_vip_img" source="vip0" x="45" y="126"/>
+	<e:Button id="my_btn_ghqm" label="更换签名" x="16" y="470" skinName="skins.ButtonBlueSkin"/>
+	<e:Button id="my_btn_ghch" y="470" skinName="skins.ButtonBlueSkin" horizontalCenter="0" label="下载快捷方式"/>
+	<e:Button id="my_btn_vip" label="VIP详情" x="359" y="470" skinName="skins.ButtonYellowSkin"/>
+	<e:Button id="my_btn_logout" label="注  销" x="16" y="530" skinName="skins.ButtonRedSkin"/>
+	<e:Button id="my_btn_voice" label="开启声音" x="359" y="530" skinName="skins.ButtonBlueSkin"/>
+	<e:Label id="my_label_1" x="143" width="345" height="221" textColor="16777215" size="19" y="68"/>
+	<e:Label id="my_label_name" textColor="0xFFFFFF" height="31" size="19" width="345" x="143" y="36"/>
+	<e:Label id="my_label_2" text="还未设置签名" x="33" y="349" width="455" height="79" textColor="16777215" size="19"/>
+	<e:Button id="_bind_acc" label="绑定账号" x="188" skinName="skins.ButtonYellowSkin" bottom="0"/>
+</e:Skin>

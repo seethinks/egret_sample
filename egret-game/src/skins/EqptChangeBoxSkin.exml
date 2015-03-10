@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="540" height="647" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing" xmlns:ns1="*">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:UIAsset id="_panel1" source="my_panel_4" height="218" scale9Grid="59,21,355,64" horizontalCenter="0" top="1" left="1" right="1"/>
+	<e:UIAsset id="_panel2" source="my_panel_4" scale9Grid="59,21,355,64" height="575" left="1" right="1" horizontalCenter="0" bottom="72"/>
+	<e:Label id="xz_label_property" textColor="0xFFFFFF" size="20" width="341" height="176" x="160" y="21"/>
+	<e:Button id="xz_btn_close" skinName="skins.ButtonRedSkin" label="关  闭" horizontalCenter="-1.5" bottom="12"/>
+	<ns1:UIIcon id="xz_icon" x="28" skinName="skins.IconSkin" top="49"/>
+	<e:Label id="xz_label_null" text="暂无可穿戴装备" width="440" verticalAlign="middle" textAlign="center" textColor="10955820" horizontalCenter="-3" verticalCenter="59.5"/>
+</e:Skin>

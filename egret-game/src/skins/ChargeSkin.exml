@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="534" height="645" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:UIAsset source="my_panel_4" scale9Grid="59,21,355,64" width="534" x="0" height="504" top="87"/>
+	<e:UIAsset source="titile_bg" x="0" y="0" width="534"/>
+	<e:UIAsset id="_now_vipLv" x="40" y="55"/>
+	<e:UIAsset id="_next_vipLv" y="55" x="429"/>
+	<e:Label id="_charge_ppt" x="19" y="12" height="21" size="16" width="489" verticalAlign="middle" textAlign="center" textColor="2150405"/>
+	<e:Label verticalAlign="middle" height="33" id="_charge_ppt0" width="311" x="14" y="600" size="26" textColor="587916" text="首次充值将获得三倍元宝"/>
+	<e:UIAsset id="_vip_exp" source="exp" width="2" x="103" y="62"/>
+	<e:Button id="_vip_xq_btn" label="VIP详情" skinName="skins.ButtonYellowSkin" y="591" x="374"/>
+</e:Skin>

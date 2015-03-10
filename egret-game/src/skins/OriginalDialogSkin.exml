@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="640" height="961" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:UIAsset id="_original_dialog_bg" source="game_main_bg" left="0" top="0" bottom="0" right="0" horizontalCenter="0" verticalCenter="0"/>
+	<e:UIAsset source="dialog_bg" top="0" bottom="1" left="0" right="0" horizontalCenter="0"/>
+	<e:UIAsset id="dialog_title" horizontalCenter="0" top="3" source="dialog_title"/>
+	<e:Label id="_title" width="141" height="32" textAlign="center" textColor="11840941" verticalAlign="middle" size="22" horizontalCenter="0" top="20"/>
+</e:Skin>

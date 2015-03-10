@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="534" height="643" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:UIAsset height="588" source="my_panel_4" x="0" width="534" scale9Grid="59,21,355,64" top="55"/>
+	<e:UIAsset x="0" source="my_panel_4" scale9Grid="59,21,355,64" width="534" height="55" y="0"/>
+	<e:UIAsset y="55" id="_now_vipLv" x="40"/>
+	<e:UIAsset id="_next_vipLv" y="55" x="429"/>
+	<e:Label height="21" textColor="0x20D005" textAlign="center" size="16" id="_charge_ppt" verticalAlign="middle" width="489" x="19" y="16"/>
+</e:Skin>
