@@ -78,7 +78,7 @@ var Demo2 = (function (_super) {
         inputTxt.x = 10, inputTxt.y = 500;
         inputTxt.width = 200;
         this.addChild(inputTxt);
-        inputTxt.text = "请输入啊...";
+        inputTxt.text = "请输入啊1111...";
         var myObj = { info: "trace", value: 2, dd: 111 };
         this.trace(myObj);
         var message = {

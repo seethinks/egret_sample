@@ -7,14 +7,15 @@
 		{
 			"name": "res"
 		},
-        {
-            "name": "greensock",
-            "path": "."
-        }
+		{
+			"name": "greensock",
+			"path": "."
+		}
 	],
 	"native": {
 		"path_ignore": [],
-		"android_path": "..\\HelloEgretAndroid"
+		"android_path": "..\\HelloEgretAndroid",
+		"ios_path": "../HelloEgretIOS"
 	},
 	"egret_version": "1.5.5"
 }
