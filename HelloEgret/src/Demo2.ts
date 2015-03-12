@@ -34,7 +34,7 @@ class Demo2 extends egret.DisplayObjectContainer
         this.addChild(this.logo)
 
         this.activityBmp = new egret.Bitmap();
-        this.activityBmp.texture = RES.getRes("icons.activity_10");
+        this.activityBmp.texture = RES.getRes("icons.activity_12");
         this.activityBmp.x = 50;
         this.activityBmp.y = 50;
         this.addChild( this.activityBmp)
@@ -48,13 +48,13 @@ class Demo2 extends egret.DisplayObjectContainer
             scaleBmp1.visible = false;
             scaleBmp1.scale9Grid = new egret.Rectangle(7,7,46,46)
             this.addChild(scaleBmp1)
-            tns();
-            function tns():void
-            {
-                var tweenScaleBmp = egret.Tween.get(scaleBmp1)
-                tweenScaleBmp.to({width:Math.random()*500,height:Math.random()*500},Math.random()*5000+1000).to({width:50,height:50},Math.random()*5000+1000)
-                tweenScaleBmp.call(tns,this)
-            }
+//            tns();
+//            function tns():void
+//            {
+//                var tweenScaleBmp = egret.Tween.get(scaleBmp1)
+//                tweenScaleBmp.to({width:Math.random()*500,height:Math.random()*500},Math.random()*5000+1000).to({width:50,height:50},Math.random()*5000+1000)
+//                tweenScaleBmp.call(tns,this)
+//            }
         }
         this.startAnimation();
 
@@ -101,7 +101,6 @@ class Demo2 extends egret.DisplayObjectContainer
         message.start();
 //        enum Color{Red,Green,Blue}
 //        console.log(Color.Red)
-
     }
 
     private trace(obj:{info:String;value:number},value?:number)
