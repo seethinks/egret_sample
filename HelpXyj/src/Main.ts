@@ -31,6 +31,8 @@ class Main extends egret.DisplayObjectContainer {
      * 加载进度界面
      */
     private loadingView: LoadingUI;
+    private _xyjList:Array<egret.MovieClip>;
+    private _xyjContainer:egret.DisplayObjectContainer;
 
     public constructor() {
         egret.Profiler.getInstance().run();
@@ -41,6 +43,7 @@ class Main extends egret.DisplayObjectContainer {
     private onAddToStage(event: egret.Event) {
         //设置加载进度界面
         this.loadingView = new LoadingUI();
+        this._xyjList = new Array();
         this.stage.addChild(this.loadingView);
 
         //初始化Resource资源加载库
@@ -95,16 +98,51 @@ class Main extends egret.DisplayObjectContainer {
      * 创建游戏场景
      */
     private createGameScene(): void {
-        var xyjData = RES.getRes("xyj_json");
-        var xyjBmp = RES.getRes("xyj_png");
-        var xyjDataFactory = new egret.MovieClipDataFactory(xyjData, xyjBmp);
-        var xyj = new egret.MovieClip(xyjDataFactory.generateMovieClipData())
-        xyj.play(-1)
 
-        this.addChild(xyj)
-        TweenLite.to(xyj,2,{x:200,y:200,onComplete:function():void{
-            xyj.frameRate = 60;
-        }})
+        if(!this._xyjContainer)
+        {
+            this._xyjContainer = new egret.DisplayObjectContainer();
+            this.addChild(this._xyjContainer)
+        }
+
+        var i = 0;
+        var l = 200;
+        for (i = 0; i < l; i++) {
+            var xyjData = RES.getRes("xyj_json");
+            var xyjBmp = RES.getRes("xyj_png");
+            var xyjDataFactory = new egret.MovieClipDataFactory(xyjData, xyjBmp);
+            var xyj = new egret.MovieClip(xyjDataFactory.generateMovieClipData())
+            xyj.x = Math.random() * egret.MainContext.instance.stage.stageWidth;
+            xyj.y = Math.random() * egret.MainContext.instance.stage.stageHeight * .5 + 300;
+            xyj.play(-1)
+
+            this._xyjContainer.addChild(xyj)
+            this._xyjList.push(xyj);
+        }
+        this.sortZ(this._xyjContainer);
+    }
+
+    private  sortZ (dParent:any):void
+    {
+        var i:number=0;
+        for (var i:number = dParent.numChildren - 1; i > -1; i--)
+        {
+            var bFlipped:Boolean = false;
+            var o:number=0;
+            for ( o = 0; o < i; o++)
+            {
+                if (dParent.getChildAt(o).y > dParent.getChildAt(o + 1).y)
+                {
+                    dParent.swapChildrenAt(o,o+1);
+                    bFlipped = true;
+                }
+            }
+            if (!bFlipped) return;
+        }
+
+//        TweenLite.to(xyj,2,{x:200,y:200,onComplete:function():void{
+//            xyj.frameRate = 60;
+//        }})
     }
 
 }
