@@ -45,7 +45,7 @@ class Main extends egret.DisplayObjectContainer {
         this.loadingView = new LoadingUI();
         this._xyjList = new Array();
         this.stage.addChild(this.loadingView);
-
+        this._createNum = 0;
         //初始化Resource资源加载库
         RES.addEventListener(RES.ResourceEvent.CONFIG_COMPLETE, this.onConfigComplete, this);
         RES.loadConfig("resource/resource.json", "resource/");
@@ -104,22 +104,34 @@ class Main extends egret.DisplayObjectContainer {
             this._xyjContainer = new egret.DisplayObjectContainer();
             this.addChild(this._xyjContainer)
         }
+        this.createXyj();
+        var timer = new egret.Timer(200,0)
+        timer.addEventListener(egret.TimerEvent.TIMER,this.createXyj,this);
+        timer.start();
+    }
 
-        var i = 0;
-        var l = 200;
-        for (i = 0; i < l; i++) {
-            var xyjData = RES.getRes("xyj_json");
-            var xyjBmp = RES.getRes("xyj_png");
-            var xyjDataFactory = new egret.MovieClipDataFactory(xyjData, xyjBmp);
-            var xyj = new egret.MovieClip(xyjDataFactory.generateMovieClipData())
-            xyj.x = Math.random() * egret.MainContext.instance.stage.stageWidth;
-            xyj.y = Math.random() * egret.MainContext.instance.stage.stageHeight * .5 + 300;
-            xyj.play(-1)
+    private _createNum:number;
+    private createXyj():void
+    {
+        if(this._createNum<20)
+        {
+            var i = 0;
+            var l = 5;
+            for (i = 0; i < l; i++) {
+                var xyjData = RES.getRes("xyj_json");
+                var xyjBmp = RES.getRes("xyj_png");
+                var xyjDataFactory = new egret.MovieClipDataFactory(xyjData, xyjBmp);
+                var xyj = new egret.MovieClip(xyjDataFactory.generateMovieClipData())
+                xyj.x = Math.random() * egret.MainContext.instance.stage.stageWidth;
+                xyj.y = Math.random() * egret.MainContext.instance.stage.stageHeight * .5 + 300;
+                xyj.play(-1)
 
-            this._xyjContainer.addChild(xyj)
-            this._xyjList.push(xyj);
+                this._xyjContainer.addChild(xyj)
+                this._xyjList.push(xyj);
+            }
+            this.sortZ(this._xyjContainer);
+            this._createNum ++;
         }
-        this.sortZ(this._xyjContainer);
     }
 
     private  sortZ (dParent:any):void
