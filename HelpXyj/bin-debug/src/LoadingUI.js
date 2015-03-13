@@ -37,16 +37,26 @@ var LoadingUI = (function (_super) {
         this.createView();
     }
     LoadingUI.prototype.createView = function () {
+        this.loadingBg = new egret.Shape();
+        this.loadingBg.graphics.beginFill(0xffffff);
+        this.loadingBg.graphics.drawRect(0, 0, egret.MainContext.instance.stage.stageWidth, egret.MainContext.instance.stage.stageHeight);
+        this.loadingBg.graphics.endFill();
+        this.addChild(this.loadingBg);
         this.textField = new egret.TextField();
         this.addChild(this.textField);
         this.textField.y = 300;
-        this.textField.textColor = 0xffffff;
+        this.textField.textColor = 0x000000;
         this.textField.width = 480;
         this.textField.height = 100;
         this.textField.textAlign = "center";
     };
     LoadingUI.prototype.setProgress = function (current, total) {
         this.textField.text = "Loading..." + current + "/" + total;
+        this.loadingBg.graphics.clear();
+        this.loadingBg.graphics.beginFill(0xffffff);
+        var w = current / total;
+        this.loadingBg.graphics.drawRect(0, 0, egret.MainContext.instance.stage.stageHeight * w, egret.MainContext.instance.stage.stageHeight);
+        this.loadingBg.graphics.endFill();
     };
     return LoadingUI;
 })(egret.Sprite);

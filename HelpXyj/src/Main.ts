@@ -33,6 +33,7 @@ class Main extends egret.DisplayObjectContainer {
     private loadingView: LoadingUI;
 
     public constructor() {
+        egret.Profiler.getInstance().run();
         super();
         this.addEventListener(egret.Event.ADDED_TO_STAGE, this.onAddToStage, this);
     }
@@ -61,12 +62,16 @@ class Main extends egret.DisplayObjectContainer {
      */
     private onResourceLoadComplete(event: RES.ResourceEvent): void {
         if (event.groupName == "xyj") {
-            this.stage.removeChild(this.loadingView);
             RES.removeEventListener(RES.ResourceEvent.GROUP_COMPLETE, this.onResourceLoadComplete, this);
             RES.removeEventListener(RES.ResourceEvent.GROUP_LOAD_ERROR, this.onResourceLoadError, this);
             RES.removeEventListener(RES.ResourceEvent.GROUP_PROGRESS, this.onResourceProgress, this);
+            TweenLite.to(this.loadingView,1,{alpha:0,onComplete:this.removeLoading()})
             this.createGameScene();
         }
+    }
+    private removeLoading():void
+    {
+        this.stage.removeChild(this.loadingView);
     }
     /**
      * 资源组加载出错
@@ -95,8 +100,11 @@ class Main extends egret.DisplayObjectContainer {
         var xyjDataFactory = new egret.MovieClipDataFactory(xyjData, xyjBmp);
         var xyj = new egret.MovieClip(xyjDataFactory.generateMovieClipData())
         xyj.play(-1)
+
         this.addChild(xyj)
-        TweenLite.to(xyj,2,{x:200,y:200})
+        TweenLite.to(xyj,2,{x:200,y:200,onComplete:function():void{
+            xyj.frameRate = 60;
+        }})
     }
 
 }
