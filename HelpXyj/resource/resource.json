@@ -1,0 +1,18 @@
+{
+	"groups":[
+	{
+		"keys":"xyj_json,xyj_png",
+		"name":"xyj"
+	}],
+	"resources":[
+	{
+		"name":"xyj_json",
+		"type":"json",
+		"url":"assets/xyj.json"
+	},
+	{
+		"name":"xyj_png",
+		"type":"image",
+		"url":"assets/xyj.png"
+	}]
+}
