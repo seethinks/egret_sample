@@ -10,9 +10,11 @@ class GameManager
     private static  _instance:GameManager;
 
     private _startTime:number=0;
-    private _second:number = 5;
-    private _curSec:number = 0;
+    private _second:number = 10;
     private xyjDataFactory:any;
+
+    private _blackArea:egret.Sprite;
+    private _offY:number=0;
 
     public constructor()
     {
@@ -32,6 +34,17 @@ class GameManager
 
     public doStart()
     {
+        if(!this._blackArea)
+        {
+            this._blackArea = new egret.Sprite();
+            this._blackArea.graphics.beginFill(0x000000)
+            this._blackArea.graphics.drawRect(0,0,LayerManager.stage.stageWidth,LayerManager.stage.stageHeight)
+            this._blackArea.graphics.endFill();
+            this._blackArea.touchEnabled = true;
+            this._blackArea.y=-this._blackArea.height;
+            LayerManager.GUILayer.addChild(this._blackArea)
+            this._offY = LayerManager.stage.stageHeight/this._second;
+        }
         GUIManager.getInstance().createGUI();
         if (!this._xyjContainer) {
             this._xyjContainer = new egret.DisplayObjectContainer();
@@ -47,6 +60,10 @@ class GameManager
     {
         var curSecond:number =  Math.floor((egret.getTimer() - this._startTime) / 1000);
         if(GlobalValue.djsSecond != this._second - curSecond) {
+            GlobalValue.djsSecond = this._second - curSecond;
+            GUIManager.getInstance().drawTxtTimer();
+
+            this._blackArea.y += this._offY;
             if (GlobalValue.djsSecond <= 0) {
                 e.currentTarget.stop();
                 e.currentTarget.removeEventListener(egret.TimerEvent.TIMER, this.run, this);
@@ -55,8 +72,7 @@ class GameManager
                 return;
             }
         }
-        GlobalValue.djsSecond = this._second - curSecond;
-        GUIManager.getInstance().drawTxtTimer();
+
 
         if( this._xyjContainer.numChildren <80)
         {

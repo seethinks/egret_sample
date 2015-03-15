@@ -6,7 +6,7 @@ var GameManager = (function () {
         this._createNum = 0;
         this._startTime = 0;
         this._second = 5;
-        this._curSec = 0;
+        this._offY = 0;
         var xyjData = RES.getRes("xyj_json");
         var xyjBmp = RES.getRes("xyj_png");
         this.xyjDataFactory = new egret.MovieClipDataFactory(xyjData, xyjBmp);
@@ -20,6 +20,15 @@ var GameManager = (function () {
         return GameManager._instance;
     };
     GameManager.prototype.doStart = function () {
+        if (!this._blackArea) {
+            this._blackArea = new egret.Sprite();
+            this._blackArea.graphics.beginFill(0x000000);
+            this._blackArea.graphics.drawRect(0, 0, LayerManager.stage.stageWidth, LayerManager.stage.stageHeight);
+            this._blackArea.graphics.endFill();
+            this._blackArea.y = -this._blackArea.height;
+            LayerManager.GUILayer.addChild(this._blackArea);
+            this._offY = LayerManager.stage.stageHeight / this._second;
+        }
         GUIManager.getInstance().createGUI();
         if (!this._xyjContainer) {
             this._xyjContainer = new egret.DisplayObjectContainer();
@@ -33,6 +42,9 @@ var GameManager = (function () {
     GameManager.prototype.run = function (e) {
         var curSecond = Math.floor((egret.getTimer() - this._startTime) / 1000);
         if (GlobalValue.djsSecond != this._second - curSecond) {
+            GlobalValue.djsSecond = this._second - curSecond;
+            GUIManager.getInstance().drawTxtTimer();
+            this._blackArea.y += this._offY;
             if (GlobalValue.djsSecond <= 0) {
                 e.currentTarget.stop();
                 e.currentTarget.removeEventListener(egret.TimerEvent.TIMER, this.run, this);
@@ -41,8 +53,6 @@ var GameManager = (function () {
                 return;
             }
         }
-        GlobalValue.djsSecond = this._second - curSecond;
-        GUIManager.getInstance().drawTxtTimer();
         if (this._xyjContainer.numChildren < 80) {
             this._createNum = 4;
         }
