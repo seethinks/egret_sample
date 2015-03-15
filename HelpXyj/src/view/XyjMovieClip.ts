@@ -8,8 +8,8 @@ class XyjMovieClip extends egret.MovieClip
         super(data)
         this.touchEnabled = true
         var posY:number = Math.random()*LayerManager.stage.stageHeight *.5
-        this.x = 30+(LayerManager.stage.stageWidth-60)*Math.random();
-        this.y = posY +LayerManager.stage.stageHeight *.5-160;
+        this.x = 15+(LayerManager.stage.stageWidth-60)*Math.random();
+        this.y = posY +LayerManager.stage.stageHeight *.5-60;
         this.addEventListener(egret.TouchEvent.TOUCH_TAP,this.saved,this)
         this.play(-1)
     }

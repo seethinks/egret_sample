@@ -35,7 +35,7 @@ class Main extends egret.DisplayObjectContainer {
 
 
     public constructor() {
-        egret.Profiler.getInstance().run();
+        //egret.Profiler.getInstance().run();
         super();
         this.addEventListener(egret.Event.ADDED_TO_STAGE, this.onAddToStage, this);
     }

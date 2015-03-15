@@ -33,7 +33,7 @@ var __extends = this.__extends || function (d, b) {
 var Main = (function (_super) {
     __extends(Main, _super);
     function Main() {
-        egret.Profiler.getInstance().run();
+        //egret.Profiler.getInstance().run();
         _super.call(this);
         this.addEventListener(egret.Event.ADDED_TO_STAGE, this.onAddToStage, this);
     }

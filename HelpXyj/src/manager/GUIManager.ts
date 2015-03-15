@@ -38,7 +38,7 @@ class GUIManager
         var titleBmp:egret.Bitmap = new egret.Bitmap();
         titleBmp.texture = RES.getRes("gameTitle_png")
         titleBmp.x = LayerManager.stage.stageWidth *.5 - titleBmp.width*.5;
-        titleBmp.y = LayerManager.stage.stageHeight *.5 - titleBmp.height*.5;
+        titleBmp.y = LayerManager.stage.stageHeight *.5 - titleBmp.height*.5-20;
         GUIManager._titleScreen.addChild(titleBmp)
 
         var btnStart:egret.Bitmap = new egret.Bitmap()
@@ -78,7 +78,7 @@ class GUIManager
         var titleBmp:egret.Bitmap = new egret.Bitmap();
         titleBmp.texture = RES.getRes("gameEnd_png")
         titleBmp.x = LayerManager.stage.stageWidth *.5 - titleBmp.width*.5;
-        titleBmp.y = LayerManager.stage.stageHeight *.5 - titleBmp.height*.5;
+        titleBmp.y = LayerManager.stage.stageHeight *.5 - titleBmp.height*.5-20;
         this._endScreen.addChild(titleBmp)
 
         var nickTxt:egret.TextField = new egret.TextField();
@@ -106,9 +106,45 @@ class GUIManager
             nickTxt.text= "获得称号:撸J狂魔"
         }
         nickTxt.x = LayerManager.stage.stageWidth *.5 - nickTxt.width*.5;
-        nickTxt.y = LayerManager.stage.stageHeight *.5 - nickTxt.height*.5;
+        nickTxt.y = LayerManager.stage.stageHeight *.5 - nickTxt.height*.5-80;
         this._endScreen.addChild(nickTxt)
 
+        //var apk:egret.Bitmap = new egret.Bitmap();
+        //apk.texture= RES.getRes("android_png")
+        //apk.x = LayerManager.stage.stageWidth *.5 - apk.width*.5;
+        //apk.touchEnabled = true;
+        //apk.y =400;
+        //this._endScreen.addChild(apk)
+        //apk.addEventListener(egret.TouchEvent.TOUCH_TAP,this.downApk,this)
+
+        var btnRepeat:egret.Bitmap = new egret.Bitmap();
+        btnRepeat.texture = RES.getRes("repeat_png")
+        btnRepeat.touchEnabled = true;
+        btnRepeat.addEventListener(egret.TouchEvent.TOUCH_TAP,this.repeatGame,this)
+        btnRepeat.x =200;
+        btnRepeat.y =380;
+        this._endScreen.addChild(btnRepeat)
+    }
+
+    private repeatGame(e:egret.TouchEvent):void
+    {
+        e.currentTarget.removeEventListener(egret.TouchEvent.TOUCH_TAP,this.repeatGame,this)
+        if(this._endScreen)
+        {
+            this._endScreen.parent.removeChild(this._endScreen)
+            this._endScreen = null;
+        }
+        GlobalValue.djsSecond=60;
+        GlobalValue.IsEndGame = false;
+        GlobalValue.savedCount = 0;
+        GameManager.getInstance().doStart();
+        this.drawTxtSavedCount();
+        this.drawTxtTimer();
+    }
+
+    private downApk():void
+    {
+        window.location.href = "http://www.helpxyj.com/apk/helpxyj_1_0.apk";
     }
 
     public createGUI()

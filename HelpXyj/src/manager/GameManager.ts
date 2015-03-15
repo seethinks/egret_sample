@@ -10,7 +10,7 @@ class GameManager
     private static  _instance:GameManager;
 
     private _startTime:number=0;
-    private _second:number = 10;
+    private _second:number = 60;
     private xyjDataFactory:any;
 
     private _blackArea:egret.Sprite;
@@ -32,8 +32,19 @@ class GameManager
         return GameManager._instance;
     }
 
+    public init()
+    {
+        this._createNum=0;
+        if(this._xyjContainer)
+        {
+            this._xyjContainer.parent.removeChild(this._xyjContainer)
+            this._xyjContainer = null;
+        }
+    }
+
     public doStart()
     {
+        this.init();
         if(!this._blackArea)
         {
             this._blackArea = new egret.Sprite();
@@ -42,7 +53,7 @@ class GameManager
             this._blackArea.graphics.endFill();
             this._blackArea.touchEnabled = true;
             this._blackArea.y=-this._blackArea.height;
-            LayerManager.GUILayer.addChild(this._blackArea)
+            LayerManager.GUILayer.addChildAt(this._blackArea,0)
             this._offY = LayerManager.stage.stageHeight/this._second;
         }
         GUIManager.getInstance().createGUI();
@@ -62,9 +73,12 @@ class GameManager
         if(GlobalValue.djsSecond != this._second - curSecond) {
             GlobalValue.djsSecond = this._second - curSecond;
             GUIManager.getInstance().drawTxtTimer();
-
-            this._blackArea.y += this._offY;
+            if(this._blackArea) this._blackArea.y += this._offY;
             if (GlobalValue.djsSecond <= 0) {
+                if(this._blackArea) {
+                    this._blackArea.parent.removeChild(this._blackArea)
+                    this._blackArea = null;
+                }
                 e.currentTarget.stop();
                 e.currentTarget.removeEventListener(egret.TimerEvent.TIMER, this.run, this);
                 GlobalValue.IsEndGame = true;
@@ -74,9 +88,9 @@ class GameManager
         }
 
 
-        if( this._xyjContainer.numChildren <80)
+        if( this._xyjContainer.numChildren <70)
         {
-            this._createNum=4;
+            this._createNum=0;
         }
         if(this._createNum<10)
         {
@@ -109,9 +123,5 @@ class GameManager
             }
             if (!bFlipped) return;
         }
-
-    //        TweenLite.to(xyj,2,{x:200,y:200,onComplete:function():void{
-    //            xyj.frameRate = 60;
-    //        }})
     }
 }

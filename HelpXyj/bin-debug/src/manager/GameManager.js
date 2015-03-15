@@ -5,7 +5,7 @@ var GameManager = (function () {
     function GameManager() {
         this._createNum = 0;
         this._startTime = 0;
-        this._second = 5;
+        this._second = 60;
         this._offY = 0;
         var xyjData = RES.getRes("xyj_json");
         var xyjBmp = RES.getRes("xyj_png");
@@ -19,14 +19,23 @@ var GameManager = (function () {
         }
         return GameManager._instance;
     };
+    GameManager.prototype.init = function () {
+        this._createNum = 0;
+        if (this._xyjContainer) {
+            this._xyjContainer.parent.removeChild(this._xyjContainer);
+            this._xyjContainer = null;
+        }
+    };
     GameManager.prototype.doStart = function () {
+        this.init();
         if (!this._blackArea) {
             this._blackArea = new egret.Sprite();
             this._blackArea.graphics.beginFill(0x000000);
             this._blackArea.graphics.drawRect(0, 0, LayerManager.stage.stageWidth, LayerManager.stage.stageHeight);
             this._blackArea.graphics.endFill();
+            this._blackArea.touchEnabled = true;
             this._blackArea.y = -this._blackArea.height;
-            LayerManager.GUILayer.addChild(this._blackArea);
+            LayerManager.GUILayer.addChildAt(this._blackArea, 0);
             this._offY = LayerManager.stage.stageHeight / this._second;
         }
         GUIManager.getInstance().createGUI();
@@ -44,8 +53,13 @@ var GameManager = (function () {
         if (GlobalValue.djsSecond != this._second - curSecond) {
             GlobalValue.djsSecond = this._second - curSecond;
             GUIManager.getInstance().drawTxtTimer();
-            this._blackArea.y += this._offY;
+            if (this._blackArea)
+                this._blackArea.y += this._offY;
             if (GlobalValue.djsSecond <= 0) {
+                if (this._blackArea) {
+                    this._blackArea.parent.removeChild(this._blackArea);
+                    this._blackArea = null;
+                }
                 e.currentTarget.stop();
                 e.currentTarget.removeEventListener(egret.TimerEvent.TIMER, this.run, this);
                 GlobalValue.IsEndGame = true;
@@ -53,8 +67,8 @@ var GameManager = (function () {
                 return;
             }
         }
-        if (this._xyjContainer.numChildren < 80) {
-            this._createNum = 4;
+        if (this._xyjContainer.numChildren < 70) {
+            this._createNum = 0;
         }
         if (this._createNum < 10) {
             var i = 0;
@@ -81,9 +95,6 @@ var GameManager = (function () {
             if (!bFlipped)
                 return;
         }
-        //        TweenLite.to(xyj,2,{x:200,y:200,onComplete:function():void{
-        //            xyj.frameRate = 60;
-        //        }})
     };
     GameManager._singleton = true;
     return GameManager;
