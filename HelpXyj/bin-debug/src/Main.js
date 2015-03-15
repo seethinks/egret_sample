@@ -40,9 +40,7 @@ var Main = (function (_super) {
     Main.prototype.onAddToStage = function (event) {
         //设置加载进度界面
         this.loadingView = new LoadingUI();
-        this._xyjList = new Array();
         this.stage.addChild(this.loadingView);
-        this._createNum = 0;
         //初始化Resource资源加载库
         RES.addEventListener(RES.ResourceEvent.CONFIG_COMPLETE, this.onConfigComplete, this);
         RES.loadConfig("resource/resource.json", "resource/");
@@ -55,13 +53,15 @@ var Main = (function (_super) {
         RES.addEventListener(RES.ResourceEvent.GROUP_COMPLETE, this.onResourceLoadComplete, this);
         RES.addEventListener(RES.ResourceEvent.GROUP_LOAD_ERROR, this.onResourceLoadError, this);
         RES.addEventListener(RES.ResourceEvent.GROUP_PROGRESS, this.onResourceProgress, this);
-        RES.loadGroup("xyj");
+        RES.loadGroup("xyj", 1);
+        RES.loadGroup("xyjFly");
+        RES.loadGroup("extra");
     };
     /**
      * preload资源组加载完成
      */
     Main.prototype.onResourceLoadComplete = function (event) {
-        if (event.groupName == "xyj") {
+        if (event.groupName == "extra") {
             RES.removeEventListener(RES.ResourceEvent.GROUP_COMPLETE, this.onResourceLoadComplete, this);
             RES.removeEventListener(RES.ResourceEvent.GROUP_LOAD_ERROR, this.onResourceLoadError, this);
             RES.removeEventListener(RES.ResourceEvent.GROUP_PROGRESS, this.onResourceProgress, this);
@@ -85,59 +85,19 @@ var Main = (function (_super) {
      * preload资源组加载进度
      */
     Main.prototype.onResourceProgress = function (event) {
-        if (event.groupName == "xyj") {
-            this.loadingView.setProgress(event.itemsLoaded, event.itemsTotal);
-        }
+        //if (event.groupName == "xyj") {
+        this.loadingView.setProgress(event.itemsLoaded, event.itemsTotal);
+        // }
     };
     /**
      * 创建游戏场景
      */
     Main.prototype.createGameScene = function () {
-        if (!this._xyjContainer) {
-            this._xyjContainer = new egret.DisplayObjectContainer();
-            this.addChild(this._xyjContainer);
-        }
-        this.createXyj();
-        var timer = new egret.Timer(200, 0);
-        timer.addEventListener(egret.TimerEvent.TIMER, this.createXyj, this);
-        timer.start();
-    };
-    Main.prototype.createXyj = function () {
-        if (this._createNum < 20) {
-            var i = 0;
-            var l = 5;
-            for (i = 0; i < l; i++) {
-                var xyjData = RES.getRes("xyj_json");
-                var xyjBmp = RES.getRes("xyj_png");
-                var xyjDataFactory = new egret.MovieClipDataFactory(xyjData, xyjBmp);
-                var xyj = new egret.MovieClip(xyjDataFactory.generateMovieClipData());
-                xyj.x = Math.random() * egret.MainContext.instance.stage.stageWidth;
-                xyj.y = Math.random() * egret.MainContext.instance.stage.stageHeight * .5 + 300;
-                xyj.play(-1);
-                this._xyjContainer.addChild(xyj);
-                this._xyjList.push(xyj);
-            }
-            this.sortZ(this._xyjContainer);
-            this._createNum++;
-        }
-    };
-    Main.prototype.sortZ = function (dParent) {
-        var i = 0;
-        for (var i = dParent.numChildren - 1; i > -1; i--) {
-            var bFlipped = false;
-            var o = 0;
-            for (o = 0; o < i; o++) {
-                if (dParent.getChildAt(o).y > dParent.getChildAt(o + 1).y) {
-                    dParent.swapChildrenAt(o, o + 1);
-                    bFlipped = true;
-                }
-            }
-            if (!bFlipped)
-                return;
-        }
-        //        TweenLite.to(xyj,2,{x:200,y:200,onComplete:function():void{
-        //            xyj.frameRate = 60;
-        //        }})
+        LayerManager.init(this);
+        var bg = new egret.Bitmap();
+        bg.texture = RES.getRes("bg_jpg");
+        LayerManager.stage.addChildAt(bg, 0);
+        GUIManager.getInstance().createTitleScreen();
     };
     return Main;
 })(egret.DisplayObjectContainer);
