@@ -11,7 +11,27 @@
     <meta name="screen-orientation" content="portrait"/>
     <meta name="x5-fullscreen" content="true"/>
     <meta name="360-fullscreen" content="true"/>
-    <base href="../"/>    
+    <base href="../"/>
+    <script>
+        var GameConfig = {
+            version: '0.1.1'
+        };
+
+        var __proceed = egret.HTML5NetContext.prototype.proceed;
+        egret.HTML5NetContext.prototype.proceed = function (loader) {
+            var _url = loader._request.url;
+            loader._request.url = _url + (_url.indexOf('?') == -1 ? '?' : '&') + '__=' + GameConfig.version;
+            window.__proceed.call(this, loader);
+        };
+
+        var support = [].map && document.createElement("canvas").getContext;
+        if (support) {
+            egret_h5.startGame();
+        }
+        else {
+            alert("不支持您当前的浏览器")
+        }
+    </script>
     <!--[if IE]><script type="text/javascript">
         // Fix for IE ignoring relative base tags.
         (function() {
