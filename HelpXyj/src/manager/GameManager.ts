@@ -92,7 +92,7 @@ class GameManager
         {
             this._createNum=0;
         }
-        if(this._createNum<10)
+        if(this._createNum<100)
         {
             var i = 0;
             var l = 10;

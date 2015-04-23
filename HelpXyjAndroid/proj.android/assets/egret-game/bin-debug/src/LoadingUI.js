@@ -49,6 +49,15 @@ var LoadingUI = (function (_super) {
         this.textField.width = 480;
         this.textField.height = 100;
         this.textField.textAlign = "center";
+        this.toolTxt = new egret.TextField();
+        this.addChild(this.toolTxt);
+        this.toolTxt.width = 400;
+        this.toolTxt.size = 16;
+        this.toolTxt.textColor = 0x333333;
+        this.toolTxt.textAlign = "center";
+        this.toolTxt.text = "power by http://www.egret-labs.org/";
+        this.toolTxt.x = egret.MainContext.instance.stage.stageWidth * .5 - this.toolTxt.width * .5;
+        this.toolTxt.y = egret.MainContext.instance.stage.stageHeight - 120;
     };
     LoadingUI.prototype.setProgress = function (current, total) {
         this.textField.text = "Loading..." + current + "/" + total;

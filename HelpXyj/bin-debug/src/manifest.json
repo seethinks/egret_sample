@@ -1,9 +1,9 @@
 [
-	"info/GlobalValue.ts",
-	"view/XyjMovieClip.ts",
-	"manager/GameManager.ts",
-	"manager/LayerManager.ts",
+	"info\\GlobalValue.ts",
+	"view\\XyjMovieClip.ts",
+	"manager\\GameManager.ts",
+	"manager\\LayerManager.ts",
 	"LoadingUI.ts",
-	"manager/GUIManager.ts",
+	"manager\\GUIManager.ts",
 	"Main.ts"
 ]
